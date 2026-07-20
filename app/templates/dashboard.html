@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}
+Дашборд
+{% endblock %}
+
+{% block content %}
+
+<div class="map-layout">
+
+    <div class="map-container">
+
+        <div id="map"></div>
+
+    </div>
+
+    <div class="analytics-panel">
+
+        <div class="analytics-header">
+
+            🏙 Аналитика города
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>🚦 Светофоры</span>
+
+            <h2 id="trafficLightsCount">0</h2>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>🚌 Остановки</span>
+
+            <h2 id="busStopsCount">0</h2>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>🛣 Дороги</span>
+
+            <h2 id="roadsCount">0</h2>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>🚶 Пешеходные переходы</span>
+
+            <h2 id="crossingsCount">0</h2>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>➕ Перекрёстки</span>
+
+            <h2 id="intersectionsCount">0</h2>
+
+        </div>
+
+        <div class="analytics-card">
+
+            <span>🚇 Метро</span>
+
+            <h2 id="metroCount">0</h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

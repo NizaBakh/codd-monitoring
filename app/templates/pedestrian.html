@@ -1,0 +1,23 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Пешеходные переходы
+{% endblock %}
+
+{% block cards %}
+
+<div class="card purple">
+
+    <h2 id="crossingCount">0</h2>
+
+    <span>🚶 Пешеходные переходы</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/pedestrian.html" %}
+
+{% endblock %}

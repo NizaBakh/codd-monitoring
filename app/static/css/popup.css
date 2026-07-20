@@ -1,0 +1,46 @@
+.leaflet-popup-content-wrapper{
+
+    border-radius:16px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+.leaflet-popup-content{
+
+    margin:0;
+    padding:0;
+
+}
+
+.popup-card{
+
+    padding:16px;
+
+    min-width:230px;
+
+}
+
+.popup-card h5{
+
+    margin-bottom:10px;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+.popup-card hr{
+
+    margin:10px 0;
+
+}
+
+.popup-card p{
+
+    margin:6px 0;
+
+    font-size:14px;
+
+}

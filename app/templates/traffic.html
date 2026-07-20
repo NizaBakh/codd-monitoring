@@ -1,0 +1,23 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Светофоры
+{% endblock %}
+
+{% block cards %}
+
+<div class="card green">
+
+    <h2 id="trafficCount">0</h2>
+
+    <span>🚦 Светофоры</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/traffic.html" %}
+
+{% endblock %}

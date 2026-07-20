@@ -1,0 +1,23 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Дороги
+{% endblock %}
+
+{% block cards %}
+
+<div class="card orange">
+
+    <h2 id="roadCount">0</h2>
+
+    <span>🛣 Дороги</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/roads.html" %}
+
+{% endblock %}

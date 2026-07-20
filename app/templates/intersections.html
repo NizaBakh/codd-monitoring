@@ -1,0 +1,23 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Перекрёстки
+{% endblock %}
+
+{% block cards %}
+
+<div class="card yellow">
+
+    <h2 id="intersectionCount">0</h2>
+
+    <span>➕ Перекрёстки</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/intersections.html" %}
+
+{% endblock %}

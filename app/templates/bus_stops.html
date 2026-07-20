@@ -1,0 +1,23 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Остановки
+{% endblock %}
+
+{% block cards %}
+
+<div class="card blue">
+
+    <h2 id="busCount">0</h2>
+
+    <span>🚌 Остановки</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/bus_stops.html" %}
+
+{% endblock %}

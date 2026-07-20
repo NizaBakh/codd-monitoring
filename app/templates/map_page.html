@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="map-layout">
+
+    <div class="map-container">
+
+        <div id="map"></div>
+
+    </div>
+
+    <aside class="right-sidebar">
+
+        {% block analytics %}
+
+        {% endblock %}
+
+    </aside>
+
+</div>
+
+{% endblock %}

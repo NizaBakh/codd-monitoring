@@ -1,0 +1,137 @@
+<div class="topbar">
+
+    <div class="topbar-left">
+
+        <h4>
+
+            Центр организации дорожного движения
+
+        </h4>
+
+    </div>
+
+    <div class="topbar-right">
+
+        <button id="themeToggle" class="theme-button">
+
+            🌙
+
+        </button>
+
+        <div class="clock-box">
+
+            <div id="currentDate"></div>
+
+            <div id="clock"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const themeButton = document.getElementById("themeToggle");
+
+function loadTheme() {
+
+    const theme = localStorage.getItem("theme") || "dark";
+
+    document.body.classList.toggle(
+
+        "light-theme",
+
+        theme === "light"
+
+    );
+
+    themeButton.innerHTML =
+
+        theme === "light"
+
+            ? "☀️"
+
+            : "🌙";
+
+}
+
+themeButton.onclick = function () {
+
+    const light = document.body.classList.toggle(
+
+        "light-theme"
+
+    );
+
+    localStorage.setItem(
+
+        "theme",
+
+        light ? "light" : "dark"
+
+    );
+
+    themeButton.innerHTML =
+
+        light
+
+            ? "☀️"
+
+            : "🌙";
+
+};
+
+loadTheme();
+
+/* ========================================= */
+/* CLOCK */
+/* ========================================= */
+
+function updateClock() {
+
+    const now = new Date();
+
+    const date = now.toLocaleDateString(
+
+        "ru-RU",
+
+        {
+
+            day: "2-digit",
+
+            month: "2-digit",
+
+            year: "numeric"
+
+        }
+
+    );
+
+    const time = now.toLocaleTimeString(
+
+        "ru-RU"
+
+    );
+
+    document.getElementById("currentDate").innerHTML =
+
+        "🗓 " + date;
+
+    document.getElementById("clock").innerHTML =
+
+        "🕒 " + time;
+
+}
+
+updateClock();
+
+setInterval(
+
+    updateClock,
+
+    1000
+
+);
+
+</script>

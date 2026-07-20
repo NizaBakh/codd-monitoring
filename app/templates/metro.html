@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+Метрополитен
+{% endblock %}
+
+{% block content %}
+
+<div class="map-layout">
+
+    <div class="map-container">
+
+        <div id="map"></div>
+
+    </div>
+
+    <div class="analytics-panel">
+
+        {% include "analytics/metro.html" %}
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="/static/js/metro.js"></script>
+
+{% endblock %}

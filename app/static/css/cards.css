@@ -1,0 +1,85 @@
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.card{
+
+    padding:25px;
+
+    border-radius:16px;
+
+    color:black;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 14px 28px rgba(0,0,0,.35);
+
+}
+
+.card h2{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.card span{
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+.card.disabled{
+
+    opacity:.35;
+
+}
+
+.green{
+
+    background:#16a34a;
+
+}
+
+.blue{
+
+    background:#2563eb;
+
+}
+
+.orange{
+
+    background:#f59e0b;
+
+}
+
+.orange:hover{
+
+    background:#fbbf24;
+
+}
+
+.red{
+
+    background:#dc2626;
+
+}
