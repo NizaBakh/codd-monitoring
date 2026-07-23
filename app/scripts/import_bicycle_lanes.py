@@ -9,6 +9,10 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 GEOJSON = BASE_DIR / "cycleways-existing (1).geojson"
 
 db = SessionLocal()
+if db.query(BicycleLane).count() > 0:
+    print("Велодорожки уже импортированы")
+    db.close()
+    exit()
 db.query(BicycleLane).delete()
 db.commit()
 

@@ -9,6 +9,10 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 GEOJSON = BASE_DIR / "Парковки OSM_Низом.geojson"
 
 db = SessionLocal()
+if db.query(Parking).count() > 0:
+    print("Парковки уже импортированы")
+    db.close()
+    exit()
 
 # очищаем таблицу
 db.query(Parking).delete()

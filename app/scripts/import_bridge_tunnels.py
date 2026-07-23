@@ -10,6 +10,10 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 GEOJSON = BASE_DIR / "bridges_tunnels.geojson"
 
 db = SessionLocal()
+if db.query(BridgeTunnel).count() > 0:
+    print("Мосты и тоннели уже импортированы")
+    db.close()
+    exit()
 
 with open(GEOJSON, "r", encoding="utf-8") as f:
     data = json.load(f)
