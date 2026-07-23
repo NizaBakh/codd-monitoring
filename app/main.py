@@ -22,6 +22,27 @@ import app.models.bicycle_lane
 import app.models.parking
 
 Base.metadata.create_all(bind=engine)
+from sqlalchemy.orm import Session
+
+from app.models.bridge_tunnel import BridgeTunnel
+from app.models.bicycle_lane import BicycleLane
+from app.models.parking import Parking
+
+import subprocess
+import sys
+
+db = Session(bind=engine)
+
+if db.query(BridgeTunnel).count() == 0:
+    subprocess.run([sys.executable, "-m", "app.scripts.import_bridge_tunnels"])
+
+if db.query(BicycleLane).count() == 0:
+    subprocess.run([sys.executable, "-m", "app.scripts.import_bicycle_lanes"])
+
+if db.query(Parking).count() == 0:
+    subprocess.run([sys.executable, "-m", "app.scripts.import_parkings"])
+
+db.close()
 
 # ==========================
 # API ROUTERS
