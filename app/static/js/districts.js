@@ -203,6 +203,25 @@ function districtClicked(district) {
             updatePedestrianAnalytics(district);
 
             break;
+        case "/bridge-tunnels":
+
+            filterBridgeTunnels(district);
+            updateBridgeTunnelAnalytics(district);
+
+            break;
+
+        case "/bicycle-lanes":
+
+            filterBicycleLanes(district);
+            updateBicycleLaneAnalytics(district);
+            break;
+            
+        case "/parkings":
+
+            filterParkings(district);
+            updateParkingAnalytics(district);
+
+            break;
 
        default:
 

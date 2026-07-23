@@ -14,7 +14,7 @@ let intersections = [];
 let roads = [];
 let pedestrianCrossings = [];
 let districts = [];
-
+let parkings = [];
 /* =====================================================
    MAP
 ===================================================== */
@@ -75,6 +75,9 @@ const intersectionsLayer = L.markerClusterGroup({
 const roadsLayer = L.layerGroup();
 
 const pedestrianLayer = L.layerGroup();
+window.bridgeTunnelLayer = L.layerGroup();
+window.bicycleLaneLayer = L.layerGroup();
+window.parkingLayer = L.layerGroup();
 
 /* =====================================================
    DEFAULT LAYERS
@@ -85,6 +88,10 @@ map.addLayer(busStopsLayer);
 map.addLayer(intersectionsLayer);
 map.addLayer(roadsLayer);
 map.addLayer(pedestrianLayer);
+map.addLayer(window.bridgeTunnelLayer);
+map.addLayer(window.bicycleLaneLayer);
+map.addLayer(window.parkingLayer);
+
 
 /* =====================================================
    ICONS
@@ -113,3 +120,31 @@ const busStopIcon = L.icon({
     popupAnchor: [0, -30]
 
 });
+window.bridgeTunnelIcon = L.icon({
+
+    iconUrl: "/static/images/markers/bridge.png",
+
+    iconSize: [30,30],
+
+    iconAnchor: [15,30]
+
+});
+window.bicycleLaneStyle = {
+
+    color: "#00c853",
+
+    weight: 4,
+
+    opacity: 0.9
+
+};
+
+window.bicycleLaneSelectedStyle = {
+
+    color: "#00ff66",
+
+    weight: 6,
+
+    opacity: 1
+
+};

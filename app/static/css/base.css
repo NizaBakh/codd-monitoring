@@ -428,3 +428,50 @@ body.light-theme .menu-group summary::after{
     height:calc(100vh - 100px);
 
 }
+.bridge-type-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+    padding:8px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.bridge-type-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.bridge-type-row span:first-child{
+
+    width:28px;
+
+    font-size:22px;
+
+}
+
+.bridge-type-row span:nth-child(2){
+
+    flex:1;
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
+
+.bridge-type-row b{
+
+    font-size:18px;
+
+    color:#ffffff;
+
+}

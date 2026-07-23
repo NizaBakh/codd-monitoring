@@ -17,6 +17,9 @@ import app.models.pedestrian_crossing
 import app.models.district
 import app.models.metro_station
 import app.models.metro_line
+import app.models.bridge_tunnel
+import app.models.bicycle_lane
+import app.models.parking
 
 Base.metadata.create_all(bind=engine)
 
@@ -33,6 +36,9 @@ from app.routers.intersection import router as intersection_router
 from app.routers.pedestrian_crossing import router as pedestrian_router
 from app.routers.district import router as district_router
 from app.routers.metro import router as metro_router
+from app.routers.bridge_tunnel import router as bridge_tunnel_router
+from app.routers.bicycle_lane import router as bicycle_lane_router
+from app.routers.parking import router as parking_router
 
 # ==========================
 # PAGE ROUTERS
@@ -44,6 +50,9 @@ from app.routers.road_page import router as road_page_router
 from app.routers.intersections_page import router as intersections_page_router
 from app.routers import pedestrian_page
 from app.routers.metro_page import router as metro_page_router
+from app.routers.bridge_tunnel_page import router as bridge_tunnel_page_router
+from app.routers.bicycle_lane_page import router as bicycle_lane_page_router
+from app.routers.parking_page import router as parking_page_router
 
 # ==========================
 # FASTAPI
@@ -84,6 +93,9 @@ app.include_router(intersection_router)
 app.include_router(pedestrian_router)
 app.include_router(district_router)
 app.include_router(metro_router)
+app.include_router(bridge_tunnel_router)      # <-- API
+app.include_router(bicycle_lane_router)
+app.include_router(parking_router)
 
 # ==========================
 # PAGES
@@ -95,3 +107,6 @@ app.include_router(road_page_router)
 app.include_router(intersections_page_router)
 app.include_router(pedestrian_page.router)
 app.include_router(metro_page_router)
+app.include_router(bridge_tunnel_page_router) # <-- HTML страница
+app.include_router(bicycle_lane_page_router)
+app.include_router(parking_page_router)

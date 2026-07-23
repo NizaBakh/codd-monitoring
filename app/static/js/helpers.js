@@ -130,24 +130,22 @@ function showOnlyLayer(activeLayer) {
         busStopsLayer,
         intersectionsLayer,
         roadsLayer,
-        pedestrianLayer
+        pedestrianLayer,
+        bridgeTunnelLayer,
+        bicycleLaneLayer
 
     ];
 
     layers.forEach(layer => {
 
         if (map.hasLayer(layer)) {
-
             map.removeLayer(layer);
-
         }
 
     });
 
     if (activeLayer) {
-
         map.addLayer(activeLayer);
-
     }
 
 }
