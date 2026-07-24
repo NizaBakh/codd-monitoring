@@ -7,7 +7,7 @@ from app.models.bridge_tunnel import BridgeTunnel
 print("Старт импорта...")
 
 BASE_DIR = Path(__file__).resolve().parents[2]
-GEOJSON = BASE_DIR / "bridges_tunnels.geojson"
+GEOJSON = BASE_DIR / "bridge_tunnels.geojson"
 
 db = SessionLocal()
 if db.query(BridgeTunnel).count() > 0:
