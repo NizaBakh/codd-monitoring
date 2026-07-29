@@ -7,7 +7,12 @@ class WeatherService:
     LAT = 41.3111
     LON = 69.2797
 
-    API_KEY = os.getenv("dd2e63655684d8aa82d863c729ce13dd") 
+    API_KEY = os.getenv("WEATHER_API_KEY")
+
+    print("========== ENV CHECK ==========")
+    print("WEATHER_API_KEY =", os.getenv("WEATHER_API_KEY"))
+    print("ALL ENV =", os.environ)
+    print("================================")
 
     @staticmethod
     def get_current_weather():
