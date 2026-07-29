@@ -17,11 +17,25 @@
     <aside class="right-sidebar">
 
         {% block analytics %}
-
         {% endblock %}
 
     </aside>
 
 </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script src="/static/js/traffic.js"></script>
+<script src="/static/js/bus_stops.js"></script>
+<script src="/static/js/intersections.js"></script>
+<script src="/static/js/roads.js"></script>
+<script src="/static/js/pedestrian.js"></script>
+<script src="/static/js/bridge_tunnels.js"></script>
+<script src="/static/js/bicycle_lanes.js"></script>
+<script src="/static/js/parkings.js"></script>
+<script src="/static/js/cameras.js"></script>
 
 {% endblock %}

@@ -152,6 +152,22 @@ function showDefaultAnalytics() {
 
             break;
 
+        case "/cameras":
+
+            updateCameraAnalytics({
+                name: "",
+                name_ru: ""
+            });
+
+            break;
+        case "/telekomsoft":
+            updateTelekomsoftAnalytics({
+                name: "",
+                name_ru: ""
+            });
+
+    break;  
+
     }
 
 }
@@ -220,6 +236,21 @@ function districtClicked(district) {
 
             filterParkings(district);
             updateParkingAnalytics(district);
+
+            break;
+        case "/cameras":
+
+            filterCameras(district);
+
+            updateCameraAnalytics(district);
+
+            break;
+        case "/telekomsoft":
+            console.log(district);
+
+            filterTelekomsoft(district);
+
+            updateTelekomsoftAnalytics(district);
 
             break;
 

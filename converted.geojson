@@ -1,0 +1,3365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3615,
+          41.3211
+        ]
+      },
+      "properties": {
+        "№": 1,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "TXAY – Avayxon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3558,
+          41.3166
+        ]
+      },
+      "properties": {
+        "№": 2,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "T.Malik-qorasuv 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3545,
+          41.3157
+        ]
+      },
+      "properties": {
+        "№": 3,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "T.Malik-Makrov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3453,
+          41.3107
+        ]
+      },
+      "properties": {
+        "№": 4,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "T. Malik – AZS «Mustank»"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.306897,
+          41.305375
+        ]
+      },
+      "properties": {
+        "№": 5,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "Maxtumquli-M.Ulug'bek"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.319172,
+          41.303768
+        ]
+      },
+      "properties": {
+        "№": 6,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "Maftumquli ko'chasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.355725,
+          41.337432
+        ]
+      },
+      "properties": {
+        "№": 7,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "B.I.Y. – Burxanova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.346544,
+          41.32954
+        ]
+      },
+      "properties": {
+        "№": 8,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "B.I.Y. – Ubaydullaeva +Mirishkor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.32857,
+          41.314704
+        ]
+      },
+      "properties": {
+        "№": 9,
+        "Tuman nomi": "Мирзо Улуғбек",
+        "Manzil": "Parkentskaya – Dagistanskaya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.336,
+          41.2415
+        ]
+      },
+      "properties": {
+        "№": 10,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "TXAY-Namangan pitak"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.282242,
+          41.289083
+        ]
+      },
+      "properties": {
+        "№": 11,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "KXAY-Avliyoota"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.28424,
+          41.272521
+        ]
+      },
+      "properties": {
+        "№": 12,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Abdurauf Fitrat ko'chasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.314969,
+          41.274898
+        ]
+      },
+      "properties": {
+        "№": 13,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Ashrafiy ko'chasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.27965,
+          41.298198
+        ]
+      },
+      "properties": {
+        "№": 14,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "T.Shevchenko - A.Chexova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.284191,
+          41.298446
+        ]
+      },
+      "properties": {
+        "№": 15,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "T.Shevchenko - S.Baraka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.285683,
+          41.305225
+        ]
+      },
+      "properties": {
+        "№": 16,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Istikbol - Ya.Gulyama"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.274444,
+          41.30774
+        ]
+      },
+      "properties": {
+        "№": 17,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "T.Shevchenko - Yakkachinor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.270453,
+          41.312422
+        ]
+      },
+      "properties": {
+        "№": 18,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Buyuk Turon - Matbuotchilar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.320498,
+          41.255885
+        ]
+      },
+      "properties": {
+        "№": 19,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Fargʻona yoʻli-Yangi qoʻylik"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.28775,
+          41.30318
+        ]
+      },
+      "properties": {
+        "№": 20,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Istiqbol-S.Azimov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.282852,
+          41.287075
+        ]
+      },
+      "properties": {
+        "№": 21,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Temiryoʻlchilar-X.Aliev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.277878,
+          41.273499
+        ]
+      },
+      "properties": {
+        "№": 22,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "G.Alieva - kafe Buxaor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.277119,
+          41.274081
+        ]
+      },
+      "properties": {
+        "№": 23,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "G.Alieva - Dashnobod2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.28256,
+          41.29993
+        ]
+      },
+      "properties": {
+        "№": 24,
+        "Tuman nomi": "Миробод ",
+        "Manzil": "Amir Temur - Anton Chexova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.202629,
+          41.378743
+        ]
+      },
+      "properties": {
+        "№": 25,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "TXAY-Rabot "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.192207,
+          41.37223
+        ]
+      },
+      "properties": {
+        "№": 26,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "TXAY –16+700km Mexnat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.18916,
+          41.370289
+        ]
+      },
+      "properties": {
+        "№": 27,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "TXAY – Bunedkor 17 km"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.163434,
+          41.334452
+        ]
+      },
+      "properties": {
+        "№": 28,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "TXAY korzinka qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.161558,
+          41.331406
+        ]
+      },
+      "properties": {
+        "№": 29,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "TXAY-Ibn sino"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2233,
+          41.3499
+        ]
+      },
+      "properties": {
+        "№": 30,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "perekrestok ulits KXAY i Umid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2159,
+          41.3474
+        ]
+      },
+      "properties": {
+        "№": 31,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "KXAY-Talabalar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2108,
+          41.3424
+        ]
+      },
+      "properties": {
+        "№": 32,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "KXAY-Farobiy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.19857,
+          41.356626
+        ]
+      },
+      "properties": {
+        "№": 33,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "Kamarniso – M. Galib"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.241883,
+          41.343288
+        ]
+      },
+      "properties": {
+        "№": 34,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "Karasarayskaya – shkola № 23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.24074,
+          41.365241
+        ]
+      },
+      "properties": {
+        "№": 35,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "Karasarayskaya – Tashigrushka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.214724,
+          41.363988
+        ]
+      },
+      "properties": {
+        "№": 36,
+        "Tuman nomi": "Олмазор",
+        "Manzil": "Urazbaeva-Xasanova-Kalanova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2564,
+          41.2446
+        ]
+      },
+      "properties": {
+        "№": 37,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Olimova - PK 9 3-avtokorxona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2891,
+          41.2443
+        ]
+      },
+      "properties": {
+        "№": 38,
+        "Tuman nomi": "Сергели",
+        "Manzil": "TXAY-Massiv 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2938,
+          41.2443
+        ]
+      },
+      "properties": {
+        "№": 39,
+        "Tuman nomi": "Сергели",
+        "Manzil": "TXAY-ADA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3216,
+          41.2378
+        ]
+      },
+      "properties": {
+        "№": 40,
+        "Tuman nomi": "Сергели",
+        "Manzil": "TXAY-Porloq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2163,
+          41.2324
+        ]
+      },
+      "properties": {
+        "№": 41,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Yangi Sergeli vxod v avtomobilnyy rynok"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.25673,
+          41.246757
+        ]
+      },
+      "properties": {
+        "№": 42,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Kumarik - 269 maktab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.256278,
+          41.249886
+        ]
+      },
+      "properties": {
+        "№": 43,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Olimova - G 37 \"AZS\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.252597,
+          41.252174
+        ]
+      },
+      "properties": {
+        "№": 44,
+        "Tuman nomi": "Сергели",
+        "Manzil": "qumariq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.248716,
+          41.254662
+        ]
+      },
+      "properties": {
+        "№": 45,
+        "Tuman nomi": "Сергели",
+        "Manzil": "qumariq-Savatchi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.255395,
+          41.259744
+        ]
+      },
+      "properties": {
+        "№": 46,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Olimova - PK 18 237-maktab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.287207,
+          41.270689
+        ]
+      },
+      "properties": {
+        "№": 47,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Yangi zamon-Fitrat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.24403,
+          41.2197
+        ]
+      },
+      "properties": {
+        "№": 48,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Obi xayot - Zhaloir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.24246,
+          41.23295
+        ]
+      },
+      "properties": {
+        "№": 49,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Sergeli shox ko'chasi (Anna Axmatova ko'chasi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.214818,
+          41.225015
+        ]
+      },
+      "properties": {
+        "№": 50,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Mexrigiyo - \"Meros\" toʻyxona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.211932,
+          41.223891
+        ]
+      },
+      "properties": {
+        "№": 51,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Mexrigoʻyo - 3-uy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.223911,
+          41.212112
+        ]
+      },
+      "properties": {
+        "№": 52,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Lutfikor - 6 maktab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.207968,
+          41.222542
+        ]
+      },
+      "properties": {
+        "№": 53,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Mexrigoʻyo - Mirzo Tursunzoda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.259099,
+          41.220928
+        ]
+      },
+      "properties": {
+        "№": 54,
+        "Tuman nomi": "Сергели",
+        "Manzil": "peresechenie ulis Yakubova-Xanabad"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.271307,
+          41.232208
+        ]
+      },
+      "properties": {
+        "№": 55,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Dadaxodjaeva-Xanabad\\"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.267961,
+          41.226381
+        ]
+      },
+      "properties": {
+        "№": 56,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Qipchoq-Xonabod  ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272625,
+          41.235007
+        ]
+      },
+      "properties": {
+        "№": 57,
+        "Tuman nomi": "Сергели",
+        "Manzil": "Qipchoq-Yangi turmush ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.19636,
+          41.32866
+        ]
+      },
+      "properties": {
+        "№": 58,
+        "Tuman nomi": "Шайхонтоҳур",
+        "Manzil": "KXAY – Ipakchi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.19357,
+          41.32611
+        ]
+      },
+      "properties": {
+        "№": 59,
+        "Tuman nomi": "Шайхонтоҳур",
+        "Manzil": "KXAY – Tstirochfn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.193297,
+          41.318425
+        ]
+      },
+      "properties": {
+        "№": 60,
+        "Tuman nomi": "Шайхонтоҳур",
+        "Manzil": "KXAY vozle kafe \"FRESh FUD)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.159692,
+          41.327296
+        ]
+      },
+      "properties": {
+        "№": 61,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Shoir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.157082,
+          41.321221
+        ]
+      },
+      "properties": {
+        "№": 62,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Istiroxat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.153949,
+          41.314007
+        ]
+      },
+      "properties": {
+        "№": 63,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-18 Avtopark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.150679,
+          41.297026
+        ]
+      },
+      "properties": {
+        "№": 64,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Kids sport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.149823,
+          41.290276
+        ]
+      },
+      "properties": {
+        "№": 65,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY – Urikzor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.146626,
+          41.277444
+        ]
+      },
+      "properties": {
+        "№": 66,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Izza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.146744,
+          41.272419
+        ]
+      },
+      "properties": {
+        "№": 67,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Izza Mebel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.147369,
+          41.267795
+        ]
+      },
+      "properties": {
+        "№": 68,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Kurilish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.193485,
+          41.308203
+        ]
+      },
+      "properties": {
+        "№": 69,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "KXAY – Mergancha 4 pr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.165261,
+          41.31631
+        ]
+      },
+      "properties": {
+        "№": 70,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Beshkayrogoch – poliklinika № 22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.163584,
+          41.303476
+        ]
+      },
+      "properties": {
+        "№": 71,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Tukimachi – Sharofa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.152271,
+          41.270123
+        ]
+      },
+      "properties": {
+        "№": 72,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Kovunchi - Kurilish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.168733,
+          41.317721
+        ]
+      },
+      "properties": {
+        "№": 73,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Beshkayragoch - Ukkosha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.180912,
+          41.303341
+        ]
+      },
+      "properties": {
+        "№": 74,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Ali Kushchi – 1 tor Xursan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.177417,
+          41.278853
+        ]
+      },
+      "properties": {
+        "№": 75,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Lutfiy-Xafas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.157696,
+          41.305124
+        ]
+      },
+      "properties": {
+        "№": 76,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "M.Uygʻur-Zulfizor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.176178,
+          41.311218
+        ]
+      },
+      "properties": {
+        "№": 77,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "M.Uygʻur-Xondamir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.150899,
+          41.298982
+        ]
+      },
+      "properties": {
+        "№": 78,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TXAY-Petrol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.169296,
+          41.275598
+        ]
+      },
+      "properties": {
+        "№": 79,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Lutfi (Abdullox ibn Ma'sud masjidi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.15323,
+          41.267287
+        ]
+      },
+      "properties": {
+        "№": 80,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Kovunchi vozle supermarketa Xavas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.183196,
+          41.326877
+        ]
+      },
+      "properties": {
+        "№": 81,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Istiroxat- ul Boltaeva"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.152667,
+          41.310831
+        ]
+      },
+      "properties": {
+        "№": 82,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "TKAD (D-MAX sentr)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.155514,
+          41.281637
+        ]
+      },
+      "properties": {
+        "№": 83,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "perekrestok ulisa Izza -"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.16819,
+          41.299168
+        ]
+      },
+      "properties": {
+        "№": 84,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Toʻqimachi koʻchasi 193-maktab qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.164685,
+          41.302414
+        ]
+      },
+      "properties": {
+        "№": 85,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Toʻqimachi va 2 tor Toʻqimachi koʻchalari kesishmasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1755,
+          41.277696
+        ]
+      },
+      "properties": {
+        "№": 86,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Lutfiy koʻchasi 107-son maktab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.17404,
+          41.310363
+        ]
+      },
+      "properties": {
+        "№": 87,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Koʻkcha darvoza – Dilnoz koʻchalari kesishmasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.188108,
+          41.279274
+        ]
+      },
+      "properties": {
+        "№": 88,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "M.Shaxzoda koʻchalari “Osiyo med” qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.159574,
+          41.312455
+        ]
+      },
+      "properties": {
+        "№": 89,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Toʻqimachi koʻchasi “Bolajon” MED qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.170457,
+          41.292467
+        ]
+      },
+      "properties": {
+        "№": 90,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Foziltepa ko'chasi Tengen bank qarshisidagi piyodalar o'tish joyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.165619,
+          41.30865
+        ]
+      },
+      "properties": {
+        "№": 91,
+        "Tuman nomi": "Учтепа",
+        "Manzil": "Kukcha Darvoza Quruvchi 7tor ko'chasi kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 92,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "A.Temur-TIV"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 93,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "I.Karimov-A.Temur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 94,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Taraqqiyot-Shaxrisabz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 95,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Istiqbol-Shaxrisabz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 96,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Shaxrisabz-A.Temur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 97,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Shaxrisabz-T.Shevchenko"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 98,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Usmana Nosira 58-poliklinika"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 99,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Mukimiy – j/d 23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 100,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Bobur-Oʻzbegim TJM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 101,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Mirobod-17 uy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 102,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Rakat boshi-Voxidova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305747,
+          41.282726
+        ]
+      },
+      "properties": {
+        "№": 103,
+        "Tuman nomi": "Яккасарой",
+        "Manzil": "Bobura (vozle xokimiyata Yakkasarayskogo rayona)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.196939,
+          41.227158
+        ]
+      },
+      "properties": {
+        "№": 104,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "TXAY B_building qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.198608,
+          41.226926
+        ]
+      },
+      "properties": {
+        "№": 105,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "TXAY-Sergeli 5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.216682,
+          41.203805
+        ]
+      },
+      "properties": {
+        "№": 106,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Kipchak - Sergeli 1 bozorcha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.213042,
+          41.215311
+        ]
+      },
+      "properties": {
+        "№": 107,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Mirzo Tursunzoda - kvartal 8-9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.215451,
+          41.195243
+        ]
+      },
+      "properties": {
+        "№": 108,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Doʻstlik - Qoʻrgʻon tepa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.212964,
+          41.198712
+        ]
+      },
+      "properties": {
+        "№": 109,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Kurgontepa - Chinor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.230099,
+          41.186367
+        ]
+      },
+      "properties": {
+        "№": 110,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Chortoq - Umid (Zavod)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.234636,
+          41.194592
+        ]
+      },
+      "properties": {
+        "№": 111,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qanora - Rayxon - Chortoq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.204034,
+          41.220834
+        ]
+      },
+      "properties": {
+        "№": 112,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Mexrigiyo - 329 maktab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.219754,
+          41.201444
+        ]
+      },
+      "properties": {
+        "№": 113,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Chinor - Polvonyor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.217581,
+          41.20056
+        ]
+      },
+      "properties": {
+        "№": 114,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Chinor - Bogichinor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.234846,
+          41.205692
+        ]
+      },
+      "properties": {
+        "№": 115,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Yangi sergeli-Narzullaeva"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.210996,
+          41.201445
+        ]
+      },
+      "properties": {
+        "№": 116,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq-Qoʻrgʻontepa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.19008,
+          41.192316
+        ]
+      },
+      "properties": {
+        "№": 117,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq-Xushnud MFY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.235325,
+          41.211489
+        ]
+      },
+      "properties": {
+        "№": 118,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Kipchak naprotiv Detskogo sada 46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.20379818577011,
+          41.19846226662174
+        ]
+      },
+      "properties": {
+        "№": 119,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq  Visol ko'chalari kesishmasi "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2198915166089,
+          41.205167633760105
+        ]
+      },
+      "properties": {
+        "№": 120,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq  Lutfkor 2-tor ko'chalari kesishmasi "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.22814232845465,
+          41.208554678362454
+        ]
+      },
+      "properties": {
+        "№": 121,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq  ko'chasi (Soliha market) qarshisidagi piyodalar o'tish joyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2244438184361,
+          41.20705552891649
+        ]
+      },
+      "properties": {
+        "№": 122,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qipchoq  Lutfkor 1-tor ko'chalari kesishmasi "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.197234,
+          41.218964
+        ]
+      },
+      "properties": {
+        "№": 123,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "KXY- Qo'rg'ontepa chorrahasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.199213,
+          41.21806
+        ]
+      },
+      "properties": {
+        "№": 124,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qo'rg'ontepa-Mexrigiyo ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.200218,
+          41.216622
+        ]
+      },
+      "properties": {
+        "№": 125,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qo'rg'ontepa-Qo'rg'ontepa 1-tor ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.203698,
+          41.211586
+        ]
+      },
+      "properties": {
+        "№": 126,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qo'rg'ontepa-Shokirariq ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.208022,
+          41.205662
+        ]
+      },
+      "properties": {
+        "№": 127,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Qo'rg'ontepa-Lutfkor ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.216756,
+          41.209285
+        ]
+      },
+      "properties": {
+        "№": 128,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Lutfkor-Lutfkor 2-tor ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.203628,
+          41.228182
+        ]
+      },
+      "properties": {
+        "№": 129,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Mirzo Tursunzoda O'zgarish metro bekati oldidagi piyodalar o'tish joyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.204984,
+          41.225679
+        ]
+      },
+      "properties": {
+        "№": 130,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Mirzo Tursunzoda O'zgarish maxalla qarshisidagi piyodalar o'tish joyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.19298,
+          41.20532
+        ]
+      },
+      "properties": {
+        "№": 131,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Shokirariq sergeli 10 xududdagi chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.191935,
+          41.206504
+        ]
+      },
+      "properties": {
+        "№": 132,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Shokirariq-Qo'rg'ontepa 1-tor ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.221712,
+          41.211247
+        ]
+      },
+      "properties": {
+        "№": 133,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Lutfkor-Lutfkor 1-tor ko'chalari kesishgan chorraha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.235087,
+          41.216097
+        ]
+      },
+      "properties": {
+        "№": 134,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Obihayot-Jaloyir ko'chalari kesishgan chorrahasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.240055,
+          41.218166
+        ]
+      },
+      "properties": {
+        "№": 135,
+        "Tuman nomi": "Янгиҳаёт",
+        "Manzil": "Obihayot Sergeli RTMO qoshidagi travmatologiya markazi oldidagi piyodalar o'tish joyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.339,
+          41.2439
+        ]
+      },
+      "properties": {
+        "№": 136,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "TXAY taksopark-Vodiy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3438,
+          41.2454
+        ]
+      },
+      "properties": {
+        "№": 137,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "TXAY-Uysozlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.314063,
+          41.312982
+        ]
+      },
+      "properties": {
+        "№": 138,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "M.Ulugbek - S.Mashxodiy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.338844,
+          41.285372
+        ]
+      },
+      "properties": {
+        "№": 139,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Kadisheva - Birlashgan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.322892,
+          41.309994
+        ]
+      },
+      "properties": {
+        "№": 140,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "S.Mashxodiy - shkola № 307"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.289811,
+          41.305241
+        ]
+      },
+      "properties": {
+        "№": 141,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Azimova - Toytepa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.347457,
+          41.289339
+        ]
+      },
+      "properties": {
+        "№": 142,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Birlashgan - Sives"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.330038,
+          41.31233
+        ]
+      },
+      "properties": {
+        "№": 143,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Oltintepa - Parkent magazin \" Korzinka\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.304715,
+          41.299238
+        ]
+      },
+      "properties": {
+        "№": 144,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Elbek - Tarakkiyot 2-tor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.322324,
+          41.315332
+        ]
+      },
+      "properties": {
+        "№": 145,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Parkentskaya – Parkensk.rinok"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.316494,
+          41.316772
+        ]
+      },
+      "properties": {
+        "№": 146,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Parkent-M.Ulugʻbek"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.325272,
+          41.314969
+        ]
+      },
+      "properties": {
+        "№": 147,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Parkent-Chotqol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.32757,
+          41.311147
+        ]
+      },
+      "properties": {
+        "№": 148,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Oltintepa-Asia allianse bank"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.322288,
+          41.310186
+        ]
+      },
+      "properties": {
+        "№": 149,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "S.Mashxadiy-123/1-uy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.348691,
+          41.284377
+        ]
+      },
+      "properties": {
+        "№": 150,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Avisamozlash-Bozorcha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.305542,
+          41.302117
+        ]
+      },
+      "properties": {
+        "№": 151,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "P.Maxmud-Xamza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.309958,
+          41.307627
+        ]
+      },
+      "properties": {
+        "№": 152,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Prosekt Mirzo-Ulugbek (kladbishe Botkina)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.296895,
+          41.300033
+        ]
+      },
+      "properties": {
+        "№": 153,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "KXAY - Vinogradnyy magazin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.300375,
+          41.306586
+        ]
+      },
+      "properties": {
+        "№": 154,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "KXAY mesto sezda na ulitsu Tarrakiyot"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.292219,
+          41.307578
+        ]
+      },
+      "properties": {
+        "№": 155,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "S.Azimov-Taraqqiyot"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.295651,
+          41.30694
+        ]
+      },
+      "properties": {
+        "№": 156,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Tarrakiyot (institut Travmotologii)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.299465,
+          41.307622
+        ]
+      },
+      "properties": {
+        "№": 157,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Taraqqiyot-Toshmi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.325876,
+          41.304823
+        ]
+      },
+      "properties": {
+        "№": 158,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Maxtumkuli - 17 uy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.330807,
+          41.305079
+        ]
+      },
+      "properties": {
+        "№": 159,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Maftumquli ko'chasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.45685,
+          41.31812
+        ]
+      },
+      "properties": {
+        "№": 160,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Maftumquli ko'chasi tunel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.321909,
+          41.304408
+        ]
+      },
+      "properties": {
+        "№": 161,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Maxtumquli-Makro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.336458,
+          41.284199
+        ]
+      },
+      "properties": {
+        "№": 162,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "M.Ashrafiy-Slonima"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.337599,
+          41.286952
+        ]
+      },
+      "properties": {
+        "№": 163,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Korasuv - Izzat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.34117,
+          41.295233
+        ]
+      },
+      "properties": {
+        "№": 164,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Korasuv - k/t. Lisunova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.342288,
+          41.298274
+        ]
+      },
+      "properties": {
+        "№": 165,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Qorasuv  Pavel sadimenko chorrahasi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3426,
+          41.298575
+        ]
+      },
+      "properties": {
+        "№": 166,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Korasuv - Kaxovskaya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2889,
+          41.3788
+        ]
+      },
+      "properties": {
+        "№": 167,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "A.Temur – 5pr. Farogat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2885,
+          41.3773
+        ]
+      },
+      "properties": {
+        "№": 168,
+        "Tuman nomi": "Яшнобод",
+        "Manzil": "Amir Temura-Zhalilova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2878,
+          41.3747
+        ]
+      },
+      "properties": {
+        "№": 169,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Xolmuxammedov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2877,
+          41.3742
+        ]
+      },
+      "properties": {
+        "№": 170,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur - Axilobad"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2863,
+          41.3697
+        ]
+      },
+      "properties": {
+        "№": 171,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "prospekt Amira Temura vozle magazina Uno"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2843,
+          41.3674
+        ]
+      },
+      "properties": {
+        "№": 172,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Rixsiliy – r-n Billur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2891,
+          41.3589
+        ]
+      },
+      "properties": {
+        "№": 173,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Xalq banki"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2889,
+          41.3567
+        ]
+      },
+      "properties": {
+        "№": 174,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A. Temur – D-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2879,
+          41.3512
+        ]
+      },
+      "properties": {
+        "№": 175,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur – zh/d 1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2872,
+          41.3484
+        ]
+      },
+      "properties": {
+        "№": 176,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "prospekt Amira Temura vozle ploshchadi Shaxidov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2862,
+          41.3421
+        ]
+      },
+      "properties": {
+        "№": 177,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A. Temur – Universitet Svyazi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2856,
+          41.3397
+        ]
+      },
+      "properties": {
+        "№": 178,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Bog'ishamol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2851,
+          41.3376
+        ]
+      },
+      "properties": {
+        "№": 179,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A. Temur – gost Interkontinental"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2845,
+          41.3336
+        ]
+      },
+      "properties": {
+        "№": 180,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Prospekt A.Temura pod mostom KXAY vozle Uztelekom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2832,
+          41.3278
+        ]
+      },
+      "properties": {
+        "№": 181,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Xurshida"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2828,
+          41.3255
+        ]
+      },
+      "properties": {
+        "№": 182,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Niyozbek yo'li"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2825,
+          41.3236
+        ]
+      },
+      "properties": {
+        "№": 183,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Timur – 3 proezd Niyozbek yuli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.281,
+          41.3168
+        ]
+      },
+      "properties": {
+        "№": 184,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Shaxrisabz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2806,
+          41.3151
+        ]
+      },
+      "properties": {
+        "№": 185,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Temur-Istiqlol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.275044,
+          41.371996
+        ]
+      },
+      "properties": {
+        "№": 186,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Rixsili Kuloktepa – Uchkaxramon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.280455,
+          41.369214
+        ]
+      },
+      "properties": {
+        "№": 187,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Rixsiliy – r-n Billur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.273371,
+          41.373583
+        ]
+      },
+      "properties": {
+        "№": 188,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Rixsili ko'chasi (korzinka)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2766,
+          41.3174
+        ]
+      },
+      "properties": {
+        "№": 189,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Navoiy-Xyatt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2717,
+          41.3188
+        ]
+      },
+      "properties": {
+        "№": 190,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Navoiy-Sh.Rashidov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.270477,
+          41.312393
+        ]
+      },
+      "properties": {
+        "№": 191,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Zarafshon - Matbuotchilar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.273672,
+          41.342763
+        ]
+      },
+      "properties": {
+        "№": 192,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Iftixor(Xodjaeva) – Usta Shirin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.301694,
+          41.36637
+        ]
+      },
+      "properties": {
+        "№": 193,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Ya.Yunusabad (Visokovoltnaya) – mag. Chayka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.309014,
+          41.373562
+        ]
+      },
+      "properties": {
+        "№": 194,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yunus ota ( T.Zaxidova) – j/d 22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.274456,
+          41.328611
+        ]
+      },
+      "properties": {
+        "№": 195,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Xurshida-Sh.Rashidov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.279002,
+          41.328174
+        ]
+      },
+      "properties": {
+        "№": 196,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Xurshida-Minor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.294535,
+          41.365318
+        ]
+      },
+      "properties": {
+        "№": 197,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yangishaxar-Texnomart"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.271328,
+          41.375561
+        ]
+      },
+      "properties": {
+        "№": 198,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Quloqtepa-Qoraqamish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272806,
+          41.376278
+        ]
+      },
+      "properties": {
+        "№": 199,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Qoraqamish-Minimalist"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.273737,
+          41.376844
+        ]
+      },
+      "properties": {
+        "№": 200,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Qoraqamish-Minimalist 1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.276008,
+          41.378197
+        ]
+      },
+      "properties": {
+        "№": 201,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Qoraqamish-Sport maydoni"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.280064,
+          41.380642
+        ]
+      },
+      "properties": {
+        "№": 202,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yuqoriqoraqamish-Qoraqamish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.29541,
+          41.375587
+        ]
+      },
+      "properties": {
+        "№": 203,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Donish-Yunusota"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.299452,
+          41.375033
+        ]
+      },
+      "properties": {
+        "№": 204,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yunusota-Arbat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.279599,
+          41.360507
+        ]
+      },
+      "properties": {
+        "№": 205,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Donish-Shoxsaroy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.276919,
+          41.35931
+        ]
+      },
+      "properties": {
+        "№": 206,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Donish-Shoxsaroy 1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272796,
+          41.322744
+        ]
+      },
+      "properties": {
+        "№": 207,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "A.Qodiriy-Sh.Rashidov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.267039,
+          41.319935
+        ]
+      },
+      "properties": {
+        "№": 208,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Prospekt Navoi vozle ministerstva selskogo i vodnogo xozyaystva"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.293827,
+          41.370144
+        ]
+      },
+      "properties": {
+        "№": 209,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "ulisa A.Donisha vozle kafe Chinor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.283685,
+          41.362451
+        ]
+      },
+      "properties": {
+        "№": 210,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "ulisa A.Donisha Yunusabad 4 kvartal kafe Diyar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.313639,
+          41.370701
+        ]
+      },
+      "properties": {
+        "№": 211,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yangi-Yunusobod (naprotiv dom 1, 18-kvartal)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.314163,
+          41.365612
+        ]
+      },
+      "properties": {
+        "№": 212,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "ulisi Otaboy ota Tursunov - Yunusota"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.290359,
+          41.38337
+        ]
+      },
+      "properties": {
+        "№": 213,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY – A.Timur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.277675,
+          41.387105
+        ]
+      },
+      "properties": {
+        "№": 214,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY-Karvan yuli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.265835,
+          41.394613
+        ]
+      },
+      "properties": {
+        "№": 215,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY-14 uy qarshisi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.26102,
+          41.396998
+        ]
+      },
+      "properties": {
+        "№": 216,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY – Xasanboy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.253156,
+          41.397878
+        ]
+      },
+      "properties": {
+        "№": 217,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY-Xasanboy 5-tor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.310059,
+          41.372307
+        ]
+      },
+      "properties": {
+        "№": 218,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "Yunusota-Famos magazin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2969,
+          41.3837
+        ]
+      },
+      "properties": {
+        "№": 219,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY – A. Donish bazar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.316,
+          41.3846
+        ]
+      },
+      "properties": {
+        "№": 220,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY sabzavot MFYga kirish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3198,
+          41.3797
+        ]
+      },
+      "properties": {
+        "№": 221,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY - Dexkonobad"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3227,
+          41.3735
+        ]
+      },
+      "properties": {
+        "№": 222,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY-Yangi Yunusobod"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3249,
+          41.3694
+        ]
+      },
+      "properties": {
+        "№": 223,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY – Chinobod O.Zokirova,Gvardeyskaya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3336,
+          41.3629
+        ]
+      },
+      "properties": {
+        "№": 224,
+        "Tuman nomi": "Юнусобод",
+        "Manzil": "TXAY-Tilla kapkir"
+      }
+    }
+  ]
+}

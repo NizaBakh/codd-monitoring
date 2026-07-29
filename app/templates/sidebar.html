@@ -76,6 +76,18 @@
                 <i class="bi bi-bridge"></i>
                 🅿 Парковки
             </a>
+            <a href="/cameras">
+
+                📷 Камеры
+
+            </a>
+            <a href="/telekomsoft">
+
+                <i class="bi bi-broadcast"></i>
+
+                <span>Telekomsoft</span>
+
+            </a>
 
         </details>
 
@@ -116,83 +128,55 @@
 </div>
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const infra = document.getElementById("infraMenu");
-
     const transport = document.getElementById("transportMenu");
 
     if (localStorage.getItem("infraMenu") === "true") {
-
         infra.open = true;
-
     }
 
     if (localStorage.getItem("transportMenu") === "true") {
-
         transport.open = true;
-
     }
 
     infra.addEventListener("toggle", function () {
-
-        localStorage.setItem(
-
-            "infraMenu",
-
-            infra.open
-
-        );
-
+        localStorage.setItem("infraMenu", infra.open);
     });
 
     transport.addEventListener("toggle", function () {
-
-        localStorage.setItem(
-
-            "transportMenu",
-
-            transport.open
-
-        );
-
+        localStorage.setItem("transportMenu", transport.open);
     });
 
     const path = window.location.pathname;
 
     if (
-
         path.startsWith("/traffic-lights") ||
-
         path.startsWith("/roads") ||
-
         path.startsWith("/pedestrian-crossings") ||
-
-        path.startsWith("/intersections")
-
+        path.startsWith("/intersections") ||
+        path.startsWith("/bridge-tunnels") ||
+        path.startsWith("/bicycle-lanes") ||
+        path.startsWith("/parkings") ||
+        path.startsWith("/cameras") ||
+        path.startsWith("/telekomsoft")
     ) {
 
         infra.open = true;
-
         localStorage.setItem("infraMenu", true);
 
     }
 
     if (
-
         path.startsWith("/bus-stops") ||
-
         path.startsWith("/metro")
-
     ) {
 
         transport.open = true;
-
         localStorage.setItem("transportMenu", true);
 
     }
 
 });
-
 </script>

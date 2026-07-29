@@ -1,0 +1,37 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Камеры
+{% endblock %}
+
+{% block cards %}
+
+<div class="card blue">
+
+    <h2 id="cameraCount">0</h2>
+
+    <span>📷 Камеры</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/cameras.html" %}
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    await initCameras();
+
+});
+
+</script>
+
+{% endblock %}

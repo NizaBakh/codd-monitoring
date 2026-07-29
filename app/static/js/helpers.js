@@ -7,38 +7,63 @@ function normalize(text) {
     text = (text || "")
         .toString()
         .toLowerCase()
-        .trim();
+        .trim()
 
-    text = text
-        .replaceAll("ʻ", "")
-        .replaceAll("ʼ", "")
-        .replaceAll("'", "")
-        .replaceAll("`", "")
+        // апострофы
+        .replace(/['‘’ʻʼ`]/g, "")
 
-        .replaceAll("ў", "у")
-        .replaceAll("ғ", "г")
-        .replaceAll("қ", "к")
-        .replaceAll("ҳ", "х")
-        .replaceAll("ё", "е")
+        // узбекские буквы
+        .replace(/ў/g, "у")
+        .replace(/ғ/g, "г")
+        .replace(/қ/g, "к")
+        .replace(/ҳ/g, "х")
+        .replace(/ё/g, "е")
 
-        .replaceAll("-", " ")
+        // дефисы
+        .replace(/-/g, " ")
 
-        .replaceAll(" tumani", "")
-        .replaceAll(" тумани", "")
-        .replaceAll(" район", "")
+        // окончания
+        .replace(/ tumani/g, "")
+        .replace(/ тумани/g, "")
+        .replace(/ район/g, "")
 
         .replace(/\s+/g, " ")
         .trim();
 
-    if (text === "янгихаёт")
-        text = "янгихает";
+    // убрать пробелы полностью
+    text = text.replace(/\s/g, "");
 
-    if (text === "yangihayot")
-        text = "янгихает";
+    // =====================================================
+    // Синонимы районов
+    // =====================================================
 
-    return text;
+    switch (text) {
+
+        case "сирғали":
+        case "сиргали":
+        case "sirgali":
+        case "сергели":   
+        case "sirghali":
+        case "sergeli":
+            return "sergeli";
+
+        case "мирзоулугбек":
+        case "мирзоулуғбек":
+        case "mirzoulugbek":
+        case "mirzoulugbek":
+            return "mirzoulugbek";
+
+        case "янгихаёт":
+        case "янгихает":
+        case "yangihayot":
+            return "yangihayot";
+
+        default:
+            return text;
+
+    }
+
 }
-
 /* =====================================================
    District compare
 ===================================================== */
@@ -55,7 +80,7 @@ function districtMatch(objectDistrict, district) {
 
     ];
 
-    return variants.some(v =>
+    const result = variants.some(v =>
 
         obj === v ||
 
@@ -65,6 +90,27 @@ function districtMatch(objectDistrict, district) {
 
     );
 
+
+    if (
+        normalize(district.name) === "sergeli"
+    ) {
+
+        console.log(
+            "SERGELI CHECK:",
+            {
+                objectDistrict,
+                obj,
+                districtName: district.name,
+                districtRu: district.name_ru,
+                variants,
+                result
+                }
+        );
+
+    }
+
+
+    return result;
 }
 
 /* =====================================================
@@ -132,7 +178,10 @@ function showOnlyLayer(activeLayer) {
         roadsLayer,
         pedestrianLayer,
         bridgeTunnelLayer,
-        bicycleLaneLayer
+        bicycleLaneLayer,
+        parkingLayer,
+        cameraLayer,
+        telekomsoftLayer
 
     ];
 
@@ -149,3 +198,4 @@ function showOnlyLayer(activeLayer) {
     }
 
 }
+window.normalize = normalize;

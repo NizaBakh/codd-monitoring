@@ -15,6 +15,8 @@ let roads = [];
 let pedestrianCrossings = [];
 let districts = [];
 let parkings = [];
+let cameras = [];
+let telekomsoft = [];
 /* =====================================================
    MAP
 ===================================================== */
@@ -71,6 +73,16 @@ const intersectionsLayer = L.markerClusterGroup({
     maxClusterRadius: 45
 
 });
+const cameraLayer = L.markerClusterGroup();
+const telekomsoftLayer = L.markerClusterGroup({
+
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: true,
+    removeOutsideVisibleBounds: true,
+    disableClusteringAtZoom: 17,
+    maxClusterRadius: 45
+
+});
 
 const roadsLayer = L.layerGroup();
 
@@ -91,6 +103,8 @@ map.addLayer(pedestrianLayer);
 map.addLayer(window.bridgeTunnelLayer);
 map.addLayer(window.bicycleLaneLayer);
 map.addLayer(window.parkingLayer);
+map.addLayer(cameraLayer);
+map.addLayer(telekomsoftLayer);
 
 
 /* =====================================================
@@ -112,6 +126,17 @@ const trafficLightIcon = L.icon({
 const busStopIcon = L.icon({
 
     iconUrl: "/static/images/markers/bus_stop.png",
+
+    iconSize: [30, 30],
+
+    iconAnchor: [15, 30],
+
+    popupAnchor: [0, -30]
+
+});
+const cameraIcon = L.icon({
+
+    iconUrl: "/static/images/markers/camera.png",
 
     iconSize: [30, 30],
 

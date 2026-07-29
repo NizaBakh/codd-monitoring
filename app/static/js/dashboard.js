@@ -26,8 +26,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 await loadParkingCount();
 
                 await loadBridgeTunnelCount();
-
+               
                 await loadBicycleLaneCount();
+                await loadCameras();
+                await loadTelekomsoft();
 
                 updateDashboardAnalytics();
 
@@ -231,6 +233,11 @@ async function loadBicycleLaneCount() {
 ======================================================= */
 
 function updateDashboardAnalytics() {
+    console.log("Traffic:", trafficLights.length);
+    console.log("Bus:", busStops.length);
+    console.log("Roads:", roads.length);
+    console.log("Cameras:", cameras.length);
+    console.log("Telekomsoft:", telekomsoft.length);
 
     const traffic = document.getElementById("trafficLightsCount");
 
@@ -277,4 +284,15 @@ function updateDashboardAnalytics() {
 
     if (parkingCounter)
         parkingCounter.innerHTML = parkings.length;
+
+    const cameraCounter = document.getElementById("cameraDashboardCount");
+
+    if (cameraCounter)
+        cameraCounter.innerHTML = cameras.length;
+
+    const telekomsoftCounter = document.getElementById("telekomsoftDashboardCount");
+
+    if (telekomsoftCounter)
+        telekomsoftCounter.innerHTML = telekomsoft.length;
+
 }

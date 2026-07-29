@@ -1,0 +1,35 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Telekomsoft
+{% endblock %}
+
+{% block cards %}
+
+<div class="card blue">
+
+    <h2 id="telekomsoftCount">0</h2>
+
+    <span>📡 Объекты Telekomsoft</span>
+
+</div>
+
+{% endblock %}
+
+{% block analytics %}
+
+{% include "analytics/telekomsoft.html" %}
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="/static/js/telekomsoft.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    initTelekomsoft();
+});
+</script>
+
+{% endblock %}

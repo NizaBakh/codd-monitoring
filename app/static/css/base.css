@@ -475,3 +475,198 @@ body.light-theme .menu-group summary::after{
     color:#ffffff;
 
 }
+/* ===========================================
+   WEATHER
+=========================================== */
+
+.weather-box {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 8px 16px;
+
+    margin-right: 20px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(12px);
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.weather-box:hover {
+
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,.14);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+
+}
+
+#weatherIcon{
+
+    font-size:28px;
+
+}
+
+.weather-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+#weatherTemp{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+#weatherDesc{
+
+    font-size:12px;
+
+    opacity:.75;
+
+}
+/* ===========================================
+   WEATHER POPUP
+=========================================== */
+
+.weather-popup {
+
+    position: absolute;
+
+    top: 65px;
+
+    right: 175px;
+
+    width: 240px;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    background: rgba(18,18,18,.96);
+
+    color: white;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+    display: none;
+
+    z-index: 9999;
+
+    animation: weatherFade .2s ease;
+
+}
+
+.weather-popup h5{
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+.weather-popup div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:6px 0;
+
+    font-size:14px;
+
+}
+
+@keyframes weatherFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================
+   LIGHT THEME WEATHER
+========================== */
+
+body.light-theme .weather-box{
+
+    background:#ffffff;
+
+    color:#222;
+
+    border:1px solid #e3e3e3;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+body.light-theme #weatherDesc{
+
+    color:#555;
+
+}
+
+body.light-theme .weather-popup{
+
+    background:#ffffff;
+
+    color:#222;
+
+    border:1px solid #ddd;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
+body.light-theme .weather-box #weatherTemp{
+    color:#222 !important;
+}
+
+body.light-theme .weather-box #weatherDesc{
+    color:#555 !important;
+}
+
+body.light-theme .weather-box #weatherIcon{
+    color:#f39c12 !important;
+}
+body:not(.light-theme) .weather-box #weatherTemp{
+    color:#fff;
+}
+
+body:not(.light-theme) .weather-box #weatherDesc{
+    color:#d8d8d8;
+}

@@ -20,6 +20,8 @@ import app.models.metro_line
 import app.models.bridge_tunnel
 import app.models.bicycle_lane
 import app.models.parking
+import app.models.camera
+import app.models.telekomsoft
 
 Base.metadata.create_all(bind=engine)
 from sqlalchemy.orm import Session
@@ -41,6 +43,10 @@ if db.query(BicycleLane).count() == 0:
 
 if db.query(Parking).count() == 0:
     subprocess.run([sys.executable, "-m", "app.scripts.import_parkings"])
+from app.models.camera import Camera
+
+if db.query(Camera).count() == 0:
+    subprocess.run([sys.executable, "-m", "app.scripts.import_cameras"])
 
 db.close()
 
@@ -60,7 +66,9 @@ from app.routers.metro import router as metro_router
 from app.routers.bridge_tunnel import router as bridge_tunnel_router
 from app.routers.bicycle_lane import router as bicycle_lane_router
 from app.routers.parking import router as parking_router
-
+from app.routers.weather import router as weather_router
+from app.routers.camera import router as camera_router
+from app.routers.telekomsoft import router as telekomsoft_router
 # ==========================
 # PAGE ROUTERS
 # ==========================
@@ -74,6 +82,8 @@ from app.routers.metro_page import router as metro_page_router
 from app.routers.bridge_tunnel_page import router as bridge_tunnel_page_router
 from app.routers.bicycle_lane_page import router as bicycle_lane_page_router
 from app.routers.parking_page import router as parking_page_router
+from app.routers.camera_page import router as camera_page_router
+from app.routers.telekomsoft_page import router as telekomsoft_page_router
 
 # ==========================
 # FASTAPI
@@ -117,7 +127,9 @@ app.include_router(metro_router)
 app.include_router(bridge_tunnel_router)      # <-- API
 app.include_router(bicycle_lane_router)
 app.include_router(parking_router)
-
+app.include_router(weather_router)
+app.include_router(camera_router)
+app.include_router(telekomsoft_router)
 # ==========================
 # PAGES
 # ==========================
@@ -131,3 +143,5 @@ app.include_router(metro_page_router)
 app.include_router(bridge_tunnel_page_router) # <-- HTML страница
 app.include_router(bicycle_lane_page_router)
 app.include_router(parking_page_router)
+app.include_router(camera_page_router)
+app.include_router(telekomsoft_page_router)

@@ -124,8 +124,113 @@
 
     border-radius:18px;
 
-    overflow:hidden;
-
     box-shadow:0 12px 35px rgba(0,0,0,.35);
 
+    height:100%;
+
+    overflow-y:auto;
+
+}
+.analytics-header{
+
+    padding:20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    background:#111827;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.analytics-card{
+
+    margin:18px;
+
+    padding:18px;
+
+    background:#2b3648;
+
+    border-radius:16px;
+
+    transition:.25s;
+
+}
+
+.analytics-card:hover{
+
+    background:#344258;
+
+    transform:translateY(-2px);
+
+}
+
+.analytics-card span{
+
+    display:block;
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+}
+.analytics-card.compact span{
+
+    margin-bottom:0;
+    font-size:14px;
+
+}
+.analytics-card.compact h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    line-height:1;
+}
+.analytics-card strong{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+.analytics-card.compact{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    margin:8px 12px;
+    padding:10px 14px;
+
+    border-radius:14px;
+
+}
+
+.analytics-card.compact span:first-child {
+    font-size: 14px;
+}
+
+.analytics-card.compact .value {
+    font-size: 28px;
+    font-weight: bold;
+}
+.analytics-panel::-webkit-scrollbar{
+    width:6px;
+}
+
+.analytics-panel::-webkit-scrollbar-thumb{
+    background:#4b5563;
+    border-radius:10px;
+}
+
+.analytics-panel::-webkit-scrollbar-track{
+    background:transparent;
 }
