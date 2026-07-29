@@ -1,56 +1,44 @@
+import os
 import requests
 
 
 class WeatherService:
 
-    URL = (
-        "https://api.open-meteo.com/v1/forecast"
-        "?latitude=41.3111"
-        "&longitude=69.2797"
-        "&current="
-        "temperature_2m,"
-        "relative_humidity_2m,"
-        "apparent_temperature,"
-        "precipitation,"
-        "cloud_cover,"
-        "visibility,"
-        "wind_speed_10m,"
-        "weather_code"
-    )
+    LAT = 41.3111
+    LON = 69.2797
+
+    API_KEY = os.getenv("WEATHER_API_KEY")
 
     @staticmethod
     def get_current_weather():
 
-        response = requests.get(WeatherService.URL, timeout=10)
+        if not WeatherService.API_KEY:
+            raise Exception("WEATHER_API_KEY is not configured")
+
+        url = (
+            "https://api.openweathermap.org/data/2.5/weather"
+            f"?lat={WeatherService.LAT}"
+            f"&lon={WeatherService.LON}"
+            "&units=metric"
+            "&lang=ru"
+            f"&appid={WeatherService.API_KEY}"
+        )
+
+        response = requests.get(url, timeout=10)
 
         response.raise_for_status()
 
-        current = response.json()["current"]
-
-        weather_code = current["weather_code"]
-
-        weather_map = {
-            0: "☀️ Ясно",
-            1: "🌤 Малооблачно",
-            2: "⛅ Переменная облачность",
-            3: "☁️ Пасмурно",
-            45: "🌫 Туман",
-            48: "🌫 Туман",
-            51: "🌦 Морось",
-            61: "🌧 Дождь",
-            71: "❄️ Снег",
-            80: "🌦 Ливень",
-            95: "⛈ Гроза"
-        }
+        data = response.json()
 
         return {
-            "city": "Ташкент",
-            "temperature": current["temperature_2m"],
-            "feels_like": current["apparent_temperature"],
-            "humidity": current["relative_humidity_2m"],
-            "visibility": current["visibility"] / 1000,
-            "wind": current["wind_speed_10m"],
-            "clouds": current["cloud_cover"],
-            "precipitation": current["precipitation"],
-            "description": weather_map.get(weather_code, "🌍 Неизвестно")
+            "city": data["name"],
+            "temperature": round(data["main"]["temp"]),
+            "feels_like": round(data["main"]["feels_like"]),
+            "humidity": data["main"]["humidity"],
+            "visibility": round(data["visibility"] / 1000, 1),
+            "wind": data["wind"]["speed"],
+            "clouds": data["clouds"]["all"],
+            "precipitation": data.get("rain", {}).get("1h", 0),
+            "description": data["weather"][0]["description"],
+            "icon": data["weather"][0]["icon"]
         }
