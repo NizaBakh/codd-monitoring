@@ -1,19 +1,14 @@
 <div class="sidebar">
 
     <div class="logo">
-
         <span>ЦОДД</span> Monitoring
-
     </div>
 
     <nav class="menu">
 
         <a href="/">
-
             <i class="bi bi-speedometer2"></i>
-
             <span>Дашборд</span>
-
         </a>
 
         <!-- ========================================= -->
@@ -23,70 +18,47 @@
         <details class="menu-group" id="infraMenu">
 
             <summary>
-
                 <i class="bi bi-buildings"></i>
-
                 <span>Инфраструктура</span>
-
             </summary>
 
             <a href="/traffic-lights">
-
                 <i class="bi bi-stoplights"></i>
-
                 <span>Светофоры</span>
-
             </a>
 
             <a href="/roads">
-
                 <i class="bi bi-signpost-2"></i>
-
                 <span>Дороги</span>
-
             </a>
 
             <a href="/pedestrian-crossings">
-
                 <i class="bi bi-person-walking"></i>
-
                 <span>Пешеходные переходы</span>
-
             </a>
 
             <a href="/intersections">
-
                 <i class="bi bi-diagram-3"></i>
-
                 <span>Перекрёстки</span>
-
             </a>
+
             <a href="/bridge-tunnels">
-
                 <i class="bi bi-bridge"></i>
-
                 <span>Мосты и тоннели</span>
-
             </a>
+
             <a href="/bicycle-lanes">
                 <i class="bi bi-bridge"></i>
                 🚴 Велодорожки
             </a>
+
             <a href="/parkings">
                 <i class="bi bi-bridge"></i>
                 🅿 Парковки
             </a>
+
             <a href="/cameras">
-
                 📷 Камеры
-
-            </a>
-            <a href="/telekomsoft">
-
-                <i class="bi bi-broadcast"></i>
-
-                <span>Telekomsoft</span>
-
             </a>
 
         </details>
@@ -98,41 +70,28 @@
         <details class="menu-group" id="transportMenu">
 
             <summary>
-
                 <i class="bi bi-bus-front"></i>
-
                 <span>Транспорт</span>
-
             </summary>
 
             <a href="/bus-stops">
-
                 <i class="bi bi-bus-front"></i>
-
                 <span>Остановки</span>
-
             </a>
+
             <a href="/bus-routes">
-
                 <i class="bi bi-sign-turn-right"></i>
-
                 <span>Автобусные маршруты</span>
-
             </a>
 
             <a href="/metro">
-
                 <i class="bi bi-train-front"></i>
-
                 <span>Метрополитен</span>
-
             </a>
+
             <a href="/railway">
-
                 <i class="bi bi-train-lightrail-front"></i>
-
                 <span>Железная дорога</span>
-
             </a>
 
         </details>
@@ -173,8 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
         path.startsWith("/bridge-tunnels") ||
         path.startsWith("/bicycle-lanes") ||
         path.startsWith("/parkings") ||
-        path.startsWith("/cameras") ||
-        path.startsWith("/telekomsoft")
+        path.startsWith("/cameras")
     ) {
 
         infra.open = true;
@@ -193,6 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("transportMenu", true);
 
     }
- 
+
 });
 </script>
