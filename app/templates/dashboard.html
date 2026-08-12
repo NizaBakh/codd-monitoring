@@ -1,109 +1,110 @@
-{% extends "base.html" %}
+{% extends "base_dashboard.html" %}
 
 {% block title %}
-Дашборд
+Dashboard
 {% endblock %}
 
 {% block content %}
 
-<div class="map-layout">
+<div class="dashboard-page">
 
-    <div class="map-container">
+    <div class="kpi-grid">
 
-        <div id="map"></div>
+        <div class="kpi-card">
+            🚦
+            <h2 id="trafficLightsCount">0</h2>
+            <span>Светофоры</span>
+        </div>
+
+        <div class="kpi-card">
+            📷
+            <h2 id="cameraDashboardCount">0</h2>
+            <span>Камеры</span>
+        </div>
+
+        <div class="kpi-card">
+            🚌
+            <h2 id="busStopsCount">0</h2>
+            <span>Остановки</span>
+        </div>
+
+        <div class="kpi-card">
+            🛣️
+            <h2 id="roadsCount">0</h2>
+            <span>Дороги</span>
+        </div>
+
+        <div class="kpi-card">
+            🚸
+            <h2 id="crossingsCount">0</h2>
+            <span>Пешеходные переходы</span>
+        </div>
+
+        <div class="kpi-card">
+            ✳️
+            <h2 id="intersectionsCount">0</h2>
+            <span>Перекрёстки</span>
+        </div>
+
+        <div class="kpi-card">
+            🚲
+            <h2 id="bicycleLaneCount">0</h2>
+            <span>Велодорожки</span>
+        </div>
+
+        <div class="kpi-card">
+            🌉
+            <h2 id="bridgeTunnelCount">0</h2>
+            <span>Мосты / тоннели</span>
+        </div>
+
+        <div class="kpi-card">
+            🅿️
+            <h2 id="parkingDashboardCount">0</h2>
+            <span>Парковки</span>
+        </div>
+
+        <div class="kpi-card">
+            🚇
+            <h2 id="metroCount">0</h2>
+            <span>Станции метро</span>
+        </div>
+
+        <div class="kpi-card">
+            🚆
+            <h2 id="railwayStationsCount">0</h2>
+            <span>Ж/Д станции</span>
+        </div>
+
+        <div class="kpi-card">
+            🛤️
+            <h2 id="railwayLinesCount">0</h2>
+            <span>Ж/Д линии</span>
+        </div>
+
+        <div class="kpi-card">
+            🚍
+            <h2 id="busRoutesCount">0</h2>
+            <span>Автобусные маршруты</span>
+        </div>
 
     </div>
 
-    <div class="analytics-panel">
 
-        <div class="analytics-header">
+    <!-- ========================================= -->
+    <!-- РАЙОНЫ -->
+    <!-- ========================================= -->
 
-            🏙 Аналитика города
+    <div class="dashboard-top-grid">
 
-        </div>
+        <div class="district-panel">
 
-        <div class="analytics-card compact">
+            <h3>Состояние по районам</h3>
 
-            <span>🚦 Светофоры</span>
-
-            <h2 id="trafficLightsCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>🚌 Остановки</span>
-
-            <h2 id="busStopsCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>🛣 Дороги</span>
-
-            <h2 id="roadsCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>🚶 Пешеходные переходы</span>
-
-            <h2 id="crossingsCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>➕ Перекрёстки</span>
-
-            <h2 id="intersectionsCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>🚇 Метро</span>
-
-            <h2 id="metroCount">0</h2>
-
-        </div>
-        <div class="analytics-card compact">
-
-        <span>🌉 Мосты / тоннели</span>
-
-        <h2 id="bridgeTunnelCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>🚴 Велодорожки</span>
-
-            <h2 id="bicycleLaneDashboardCount">0</h2>
-
-        </div>
-        <div class="analytics-card compact">
-
-            <span>🅿 Парковки</span>
-
-            <h2 id="parkingDashboardCount">0</h2>
-
-        </div>
-        <div class="analytics-card compact">
-
-            <span>📷 Камеры</span>
-
-            <h2 id="cameraDashboardCount">0</h2>
-
-        </div>
-
-        <div class="analytics-card compact">
-
-            <span>📡 Telekomsoft</span>
-
-            <h2 id="telekomsoftDashboardCount">0</h2>
+            <div
+                id="districtCards"
+                class="district-grid">
+            </div>
 
         </div>
 

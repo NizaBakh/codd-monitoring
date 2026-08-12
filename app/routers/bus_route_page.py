@@ -2,24 +2,17 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
-router = APIRouter()
-
 templates = Jinja2Templates(directory="app/templates")
 
+router = APIRouter(tags=["Bus Routes Page"])
 
-@router.get("/telekomsoft", response_class=HTMLResponse)
-async def telekomsoft_page(request: Request):
 
+@router.get("/bus-routes", response_class=HTMLResponse)
+def bus_routes_page(request: Request):
     return templates.TemplateResponse(
-
-        "telekomsoft.html",
-
+        "bus_routes.html",
         {
-
             "request": request,
-
-            "page": "telekomsoft"
-
+            "title": "Автобусные маршруты"
         }
-
     )

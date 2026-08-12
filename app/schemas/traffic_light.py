@@ -7,11 +7,15 @@ class TrafficLightBase(BaseModel):
 
     district: str | None = None
 
+    mahalla: str | None = None
+
+    owner: str | None = None
+
     latitude: float
 
     longitude: float
 
-    status: str
+    status: str = "ACTIVE"
 
 
 class TrafficLightCreate(TrafficLightBase):

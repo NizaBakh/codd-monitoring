@@ -7,54 +7,173 @@ from app.models.traffic_light import TrafficLight
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-FILE_PATH = BASE_DIR / "data_traffic_lights.geojson"
+FILE_PATH = BASE_DIR / "merged.geojson"
 
 
 def import_geojson():
 
     db = SessionLocal()
-    db.query(TrafficLight).delete()
-    db.commit()
-    
-    with open(FILE_PATH, "r", encoding="utf-8") as f:
 
-        data = json.load(f)
+    try:
 
-    count = 0
+        # ==========================================
+        # ОЧИЩАЕМ СТАРЫЕ ДАННЫЕ
+        # ==========================================
 
-    for feature in data["features"]:
+        db.query(TrafficLight).delete()
 
-        props = feature["properties"]
+        db.commit()
 
-        lon, lat = feature["geometry"]["coordinates"]
 
-        traffic = TrafficLight(
+        # ==========================================
+        # GEOJSON
+        # ==========================================
 
-            osm_id=str(props.get("osm_id", "")),
+        with open(
+            FILE_PATH,
+            "r",
+            encoding="utf-8"
+        ) as f:
 
-            name=props.get("Name", "Без названия"),
+            data = json.load(f)
 
-            district=props.get("Туман", ""),
 
-            mahalla=props.get("mahalla", ""),
+        count = 0
 
-            latitude=lat,
 
-            longitude=lon,
+        # ==========================================
+        # IMPORT
+        # ==========================================
 
-            status="ACTIVE"
+        for feature in data.get("features", []):
 
+            geometry = feature.get("geometry")
+
+            properties = feature.get(
+                "properties",
+                {}
+            )
+
+
+            if not geometry:
+                continue
+
+
+            coordinates = geometry.get(
+                "coordinates"
+            )
+
+
+            if not coordinates:
+                continue
+
+
+            if len(coordinates) < 2:
+                continue
+
+
+            # GeoJSON:
+            # [longitude, latitude]
+
+            longitude = coordinates[0]
+
+            latitude = coordinates[1]
+
+
+            # ======================================
+            # ДАННЫЕ
+            # ======================================
+
+            name = (
+                properties.get("Адрес")
+                or properties.get("Name")
+                or properties.get("name")
+                or "Без названия"
+            )
+
+
+            district = (
+                properties.get("Туман")
+                or ""
+            )
+
+
+            mahalla = (
+                properties.get("mahalla")
+                or ""
+            )
+
+
+            owner = (
+                properties.get("Прина")
+                or ""
+            )
+
+
+            # ======================================
+            # ID ИСТОЧНИКА
+            # ======================================
+
+            source_id = (
+                properties.get("osm_id")
+                or properties.get("ID")
+                or properties.get("id")
+                or ""
+            )
+
+
+            # ======================================
+            # TRAFFIC LIGHT
+            # ======================================
+
+            traffic = TrafficLight(
+
+                osm_id=str(source_id),
+
+                name=str(name),
+
+                district=str(district),
+
+                mahalla=str(mahalla),
+
+                owner=str(owner),
+
+                latitude=float(latitude),
+
+                longitude=float(longitude),
+
+                status="ACTIVE"
+
+            )
+
+
+            db.add(traffic)
+
+            count += 1
+
+
+        # ==========================================
+        # COMMIT
+        # ==========================================
+
+        db.commit()
+
+
+        print(
+            f"Импортировано {count} светофоров"
         )
 
-        db.add(traffic)
 
-        count += 1
+    except Exception:
 
-    db.commit()
+        db.rollback()
 
-    db.close()
+        raise
 
-    print(f"Импортировано {count} светофоров")
+
+    finally:
+
+        db.close()
 
 
 if __name__ == "__main__":

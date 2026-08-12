@@ -1,14 +1,41 @@
-@import url("base.css");
-@import url("cards.css");
-@import url("map.css");
-@import url("analytics.css");
-@import url("popup.css");
+/* ===========================
+   CORE
+=========================== */
 
+@import url("base.css");
+@import url("layout.css");
+
+/* ===========================
+   UI
+=========================== */
+
+@import url("sidebar.css");
+@import url("topbar.css");
+
+@import url("cards.css");
+@import url("analytics.css");
+
+@import url("dashboard.css");
+
+/* ===========================
+   MAP
+=========================== */
+
+@import url("map.css");
+@import url("popup.css");
 @import url("leaflet.css");
-@import url("scrollbar.css");
+
+/* ===========================
+   COMPONENTS
+=========================== */
 
 @import url("buttons.css");
 @import url("forms.css");
 @import url("tables.css");
 
+/* ===========================
+   SERVICE
+=========================== */
+
+@import url("scrollbar.css");
 @import url("responsive.css");

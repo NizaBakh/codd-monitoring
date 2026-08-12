@@ -1,7 +1,7 @@
 /* =====================================================
    DISTRICTS
 ===================================================== */
-
+window.PAGE = window.location.pathname;
 async function loadDistricts() {
 
     try {
@@ -32,6 +32,11 @@ async function loadDistricts() {
 
 function initDistricts() {
 
+    // Если это Dashboard — карту не рисуем
+    if (PAGE === "/" || PAGE === "/dashboard") {
+        return;
+    }
+
     districts.forEach(district => {
 
         const geometry = safeJSON(district.geometry);
@@ -39,53 +44,37 @@ function initDistricts() {
         if (!geometry)
             return;
 
-        const layer = L.geoJSON(
+        const layer = L.geoJSON(geometry, {
 
-            geometry,
-
-            {
-
-                style: {
-
-                    color: "#4CAF50",
-
-                    weight: 2,
-
-                    fillOpacity: 0.05
-
-                }
-
+            style: {
+                color: "#4CAF50",
+                weight: 2,
+                fillOpacity: 0.05
             }
 
-        );
+        });
 
         layer.on({
 
-            mouseover: function (e) {
+            mouseover(e) {
 
                 e.target.setStyle({
-
                     weight: 4,
-
                     fillOpacity: 0.15
-
                 });
 
             },
 
-            mouseout: function (e) {
+            mouseout(e) {
 
                 e.target.setStyle({
-
                     weight: 2,
-
                     fillOpacity: 0.05
-
                 });
 
             },
 
-            click: function () {
+            click() {
 
                 districtClicked(district);
 
@@ -160,11 +149,7 @@ function showDefaultAnalytics() {
             });
 
             break;
-        case "/telekomsoft":
-            updateTelekomsoftAnalytics({
-                name: "",
-                name_ru: ""
-            });
+       
 
     break;  
 
@@ -245,14 +230,7 @@ function districtClicked(district) {
             updateCameraAnalytics(district);
 
             break;
-        case "/telekomsoft":
-            console.log(district);
-
-            filterTelekomsoft(district);
-
-            updateTelekomsoftAnalytics(district);
-
-            break;
+       
 
        default:
 
@@ -261,5 +239,77 @@ function districtClicked(district) {
     break;
 
     }
+
+}
+/* =====================================================
+   DASHBOARD DISTRICT CARDS
+===================================================== */
+
+function renderDistrictCards() {
+
+    const container = document.getElementById("districtCards");
+
+    if (!container)
+        return;
+
+    container.innerHTML = "";
+
+    districts.forEach(district => {
+
+        const trafficCount =
+            trafficLights.filter(t =>
+                t.district === district.name ||
+                t.district === district.name_ru
+            ).length;
+
+        const busCount =
+            busStops.filter(t =>
+                t.district === district.name ||
+                t.district === district.name_ru
+            ).length;
+
+        const roadCount =
+            roads.filter(t =>
+                t.district === district.name ||
+                t.district === district.name_ru
+            ).length;
+
+        const cameraCount =
+            cameras.filter(t =>
+                t.district === district.name ||
+                t.district === district.name_ru
+            ).length;
+
+        container.innerHTML += `
+
+        <div class="district-card">
+
+            <h3>${district.name_ru}</h3>
+
+            <div class="district-stat">
+                <span>🚦 Светофоры</span>
+                <b>${trafficCount}</b>
+            </div>
+
+            <div class="district-stat">
+                <span>🚌 Остановки</span>
+                <b>${busCount}</b>
+            </div>
+
+            <div class="district-stat">
+                <span>🛣 Дороги</span>
+                <b>${roadCount}</b>
+            </div>
+
+            <div class="district-stat">
+                <span>📷 Камеры</span>
+                <b>${cameraCount}</b>
+            </div>
+
+        </div>
+
+        `;
+
+    });
 
 }

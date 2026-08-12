@@ -11,7 +11,9 @@ class TrafficLight(Base):
 
     __tablename__ = "traffic_lights"
 
-    id: Mapped[int] = mapped_column(primary_key=True)
+    id: Mapped[int] = mapped_column(
+        primary_key=True
+    )
 
     osm_id: Mapped[str] = mapped_column(
         String(100),
@@ -28,6 +30,11 @@ class TrafficLight(Base):
     )
 
     mahalla: Mapped[str] = mapped_column(
+        String(150),
+        nullable=True
+    )
+
+    owner: Mapped[str] = mapped_column(
         String(150),
         nullable=True
     )

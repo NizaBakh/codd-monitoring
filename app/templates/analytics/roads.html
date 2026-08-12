@@ -1,55 +1,130 @@
-<div class="sidebar-title">
+<div class="roads-analytics-panel">
 
-    🛣 Аналитика дорог и путей
+    <div class="roads-analytics-header">
 
-</div>
+        🛣 Дорожная аналитика
 
-<div class="sidebar-body">
+    </div>
 
-    <div class="info-card">
+    <!-- Район -->
 
-        <h5>Район</h5>
+    <div class="roads-analytics-card">
 
-        <div id="selectedDistrict">
+        <div class="roads-card-top">
 
-            Не выбран
+            <div>
 
+                <div class="roads-card-title">
+                    Район
+                </div>
+
+                <div class="roads-card-value" id="selectedDistrict">
+                    Весь город
+                </div>
+
+            </div>
+
+            <div class="roads-card-icon bg-blue">
+                🏙
+            </div>
+
+        </div>
+
+        <div class="roads-card-sub">
+            Активный фильтр карты
         </div>
 
     </div>
 
-    <div class="info-card">
 
-        <h5>Количество дорог</h5>
+    <!-- Дороги -->
 
-        <div id="districtRoadCount">
+    <div class="roads-analytics-card">
 
-            —
+        <div class="roads-card-top">
 
+            <div>
+
+                <div class="roads-card-title">
+                    Дороги
+                </div>
+
+                <div class="roads-card-value" id="districtRoadCount">
+                    7370
+                </div>
+
+            </div>
+
+            <div class="roads-card-icon bg-green">
+                🛣
+            </div>
+
+        </div>
+
+        <div class="roads-card-sub">
+            Количество дорожных объектов
         </div>
 
     </div>
 
-    <div class="info-card">
 
-        <h5>Общая длина</h5>
+    <!-- Протяженность -->
 
-        <div id="roadLength">
+    <div class="roads-analytics-card">
 
-            —
+        <div class="roads-card-top">
 
+            <div>
+
+                <div class="roads-card-title">
+                    Общая протяжённость
+                </div>
+
+                <div class="roads-card-value" id="roadsLength">
+                    —
+                </div>
+
+            </div>
+
+            <div class="roads-card-icon bg-orange">
+                📏
+            </div>
+
+        </div>
+
+        <div class="roads-card-sub">
+            Суммарная длина дорог
         </div>
 
     </div>
 
-    <div class="info-card">
 
-        <h5>Категории</h5>
+    <!-- Категории -->
 
-        <div id="roadCategories">
+    <div class="roads-analytics-card">
 
-            —
+        <div class="roads-card-top">
 
+            <div>
+
+                <div class="roads-card-title">
+                    Категории
+                </div>
+
+                <div class="roads-card-value" id="roadsTypes">
+                    —
+                </div>
+
+            </div>
+
+            <div class="roads-card-icon bg-purple">
+                📋
+            </div>
+
+        </div>
+
+        <div class="roads-card-sub">
+            Распределение по категориям
         </div>
 
     </div>

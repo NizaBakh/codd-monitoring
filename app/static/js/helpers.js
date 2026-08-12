@@ -181,7 +181,7 @@ function showOnlyLayer(activeLayer) {
         bicycleLaneLayer,
         parkingLayer,
         cameraLayer,
-        telekomsoftLayer
+        
 
     ];
 

@@ -112,12 +112,26 @@
                 <span>Остановки</span>
 
             </a>
+            <a href="/bus-routes">
+
+                <i class="bi bi-sign-turn-right"></i>
+
+                <span>Автобусные маршруты</span>
+
+            </a>
 
             <a href="/metro">
 
                 <i class="bi bi-train-front"></i>
 
                 <span>Метрополитен</span>
+
+            </a>
+            <a href="/railway">
+
+                <i class="bi bi-train-lightrail-front"></i>
+
+                <span>Железная дорога</span>
 
             </a>
 
@@ -170,13 +184,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (
         path.startsWith("/bus-stops") ||
-        path.startsWith("/metro")
+        path.startsWith("/bus-routes") ||
+        path.startsWith("/metro") ||
+        path.startsWith("/railway")
     ) {
 
         transport.open = true;
         localStorage.setItem("transportMenu", true);
 
     }
-
+ 
 });
 </script>

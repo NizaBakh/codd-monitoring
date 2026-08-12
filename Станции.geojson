@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Станции",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 16, "CODE": "RWY893039", "NAME": "о. п. Рахимова", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.209002005361953, 41.249410030195392 ] } },
+{ "type": "Feature", "properties": { "fid": 19, "CODE": "RWY336367", "NAME": "Станция Салар", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.313785913235591, 41.323316364640853 ] } },
+{ "type": "Feature", "properties": { "fid": 20, "CODE": "RWY1530575", "NAME": "Ташкент-Северный", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.286697080335543, 41.290730776342272 ] } },
+{ "type": "Feature", "properties": { "fid": 23, "CODE": "RWY893040", "NAME": "о. п. Эркин", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.179181647547892, 41.227571712679136 ] } },
+{ "type": "Feature", "properties": { "fid": 24, "CODE": "RWY336366", "NAME": "Станция Тукимачи", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.250973173396901, 41.265483199448219 ] } },
+{ "type": "Feature", "properties": { "fid": 25, "CODE": "RWY2029608", "NAME": "о. п. Шахриабад", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.339606986492726, 41.354598885631241 ] } },
+{ "type": "Feature", "properties": { "fid": 26, "CODE": "RWY336369", "NAME": "о. п. Феруза", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.366805066892013, 41.362260657097522 ] } },
+{ "type": "Feature", "properties": { "fid": 27, "CODE": "RWY336371", "NAME": "Станция Нурхаёт (Ялангач)", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.386586314122894, 41.364841069380418 ] } },
+{ "type": "Feature", "properties": { "fid": 35, "CODE": "RWY336365", "NAME": "Ташкент-Южный", "ID": null }, "geometry": { "type": "Point", "coordinates": [ 69.226717116988411, 41.258705796400292 ] } }
+]
+}

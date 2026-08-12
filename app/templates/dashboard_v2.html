@@ -1,0 +1,100 @@
+{% extends "base_dashboard.html" %}
+
+{% block title %}
+Dashboard 2.0
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-v2">
+
+    <!-- HEADER -->
+
+
+
+    <!-- KPI -->
+
+    <section class="kpi-row">
+
+        <div class="kpi-card">
+            <div class="kpi-icon">🚦</div>
+            <div class="kpi-info">
+                <h2 id="trafficLightsCount">0</h2>
+                <span>Светофоры</span>
+            </div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-icon">🚌</div>
+            <div class="kpi-info">
+                <h2 id="busStopsCount">0</h2>
+                <span>Остановки</span>
+            </div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-icon">🛣</div>
+            <div class="kpi-info">
+                <h2 id="roadsCount">0</h2>
+                <span>Дороги</span>
+            </div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-icon">🚇</div>
+            <div class="kpi-info">
+                <h2 id="metroCount">0</h2>
+                <span>Метро</span>
+            </div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-icon">📷</div>
+            <div class="kpi-info">
+                <h2 id="cameraDashboardCount">0</h2>
+                <span>Камеры</span>
+            </div>
+        </div>
+
+   
+
+    </section>
+
+    <!-- CENTER -->
+
+    <section class="dashboard-main">
+
+        <div class="city-view">
+
+            <div class="block-title">
+                Карта города
+            </div>
+
+            <div class="city-placeholder">
+
+                Здесь позже будет 3D карта / аналитическая карта
+
+            </div>
+
+        </div>
+
+        <div class="district-panel">
+
+            <div class="block-title">
+                Районы города
+            </div>
+ 
+            <div id="districtCards" class="district-grid">
+
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    
+</div>
+
+{% endblock %}

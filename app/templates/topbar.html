@@ -2,17 +2,29 @@
 
     <div class="topbar-left">
 
-        <h4>
+        <div class="system-title">
 
-            Центр организации дорожного движения
+            <div class="system-name">
 
-        </h4>
+                🏙 ЦОДД Monitoring System
+
+            </div>
+
+            <div class="system-subtitle">
+
+                Центр организации дорожного движения города Ташкент
+
+            </div>
+
+        </div>
 
     </div>
 
+
     <div class="topbar-right">
+
         <div class="weather-box" id="weatherBox">
-            
+
             <div id="weatherIcon">🌤</div>
 
             <div class="weather-info">
@@ -22,25 +34,6 @@
                 <div id="weatherDesc">Загрузка...</div>
 
             </div>
-
-        </div>
-        <div class="weather-popup" id="weatherPopup">
-
-            <h5 id="popupCity">📍 Ташкент</h5>
-
-            <div>🌡 Температура: <span id="popupTemp"></span></div>
-
-            <div>🤗 Ощущается: <span id="popupFeels"></span></div>
-
-            <div>💧 Влажность: <span id="popupHumidity"></span></div>
-
-            <div>💨 Ветер: <span id="popupWind"></span></div>
-
-            <div>☁ Облачность: <span id="popupClouds"></span></div>
-
-            <div>🌧 Осадки: <span id="popupRain"></span></div>
-
-            <div>👁 Видимость: <span id="popupVisibility"></span></div>
 
         </div>
 
@@ -58,7 +51,35 @@
 
         </div>
 
+        <div class="user-box">
+
+            <i class="bi bi-person-circle"></i>
+
+            <span>Operator</span>
+
+        </div>
+
     </div>
+
+</div>
+
+<div class="weather-popup" id="weatherPopup">
+
+    <h5 id="popupCity">📍 Ташкент</h5>
+
+    <div>🌡 Температура: <span id="popupTemp"></span></div>
+
+    <div>🤗 Ощущается: <span id="popupFeels"></span></div>
+
+    <div>💧 Влажность: <span id="popupHumidity"></span></div>
+
+    <div>💨 Ветер: <span id="popupWind"></span></div>
+
+    <div>☁ Облачность: <span id="popupClouds"></span></div>
+
+    <div>🌧 Осадки: <span id="popupRain"></span></div>
+
+    <div>👁 Видимость: <span id="popupVisibility"></span></div>
 
 </div>
 
@@ -66,104 +87,183 @@
 
 const themeButton = document.getElementById("themeToggle");
 
-function loadTheme() {
+function loadTheme(){
 
-    const theme = localStorage.getItem("theme") || "dark";
+    const theme =
+        localStorage.getItem("theme") || "dark";
+
 
     document.body.classList.toggle(
-
         "light-theme",
-
         theme === "light"
-
     );
+
 
     themeButton.innerHTML =
-
         theme === "light"
-
             ? "☀️"
-
             : "🌙";
 
-}
 
-themeButton.onclick = function () {
+    /* =================================================
+       MAP THEME
+    ================================================= */
 
-    const light = document.body.classList.toggle(
+    if (window.map) {
 
-        "light-theme"
+        if (theme === "light") {
 
-    );
+            if (window.map.hasLayer(
+                window.darkMapLayer
+            )) {
 
-    localStorage.setItem(
+                window.map.removeLayer(
+                    window.darkMapLayer
+                );
 
-        "theme",
+            }
 
-        light ? "light" : "dark"
+            if (!window.map.hasLayer(
+                window.lightMapLayer
+            )) {
 
-    );
+                window.map.addLayer(
+                    window.lightMapLayer
+                );
 
-    themeButton.innerHTML =
-
-        light
-
-            ? "☀️"
-
-            : "🌙";
-
-};
-
-loadTheme();
-
-/* ========================================= */
-/* CLOCK */
-/* ========================================= */
-
-function updateClock() {
-
-    const now = new Date();
-
-    const date = now.toLocaleDateString(
-
-        "ru-RU",
-
-        {
-
-            day: "2-digit",
-
-            month: "2-digit",
-
-            year: "numeric"
+            }
 
         }
 
+        else {
+
+            if (window.map.hasLayer(
+                window.lightMapLayer
+            )) {
+
+                window.map.removeLayer(
+                    window.lightMapLayer
+                );
+
+            }
+
+            if (!window.map.hasLayer(
+                window.darkMapLayer
+            )) {
+
+                window.map.addLayer(
+                    window.darkMapLayer
+                );
+
+            }
+
+        }
+
+    }
+
+}
+
+themeButton.onclick = function(){
+
+    const light =
+        document.body.classList.toggle("light-theme");
+
+
+    const theme =
+        light ? "light" : "dark";
+
+
+    localStorage.setItem(
+        "theme",
+        theme
     );
 
-    const time = now.toLocaleTimeString(
 
-        "ru-RU"
+    themeButton.innerHTML =
+        light
+            ? "☀️"
+            : "🌙";
 
-    );
+
+    /* =================================================
+       CHANGE MAP THEME
+    ================================================= */
+
+    if (window.map) {
+
+        if (theme === "light") {
+
+            if (window.map.hasLayer(
+                window.darkMapLayer
+            )) {
+
+                window.map.removeLayer(
+                    window.darkMapLayer
+                );
+
+            }
+
+            if (!window.map.hasLayer(
+                window.lightMapLayer
+            )) {
+
+                window.map.addLayer(
+                    window.lightMapLayer
+                );
+
+            }
+
+        }
+
+        else {
+
+            if (window.map.hasLayer(
+                window.lightMapLayer
+            )) {
+
+                window.map.removeLayer(
+                    window.lightMapLayer
+                );
+
+            }
+
+            if (!window.map.hasLayer(
+                window.darkMapLayer
+            )) {
+
+                window.map.addLayer(
+                    window.darkMapLayer
+                );
+
+            }
+
+        }
+
+    }
+
+};
+loadTheme();
+
+/* =======================
+   CLOCK
+======================= */
+
+function updateClock(){
+
+    const now = new Date();
 
     document.getElementById("currentDate").innerHTML =
-
-        "🗓 " + date;
+        "🗓 " +
+        now.toLocaleDateString("ru-RU");
 
     document.getElementById("clock").innerHTML =
-
-        "🕒 " + time;
+        "🕒 " +
+        now.toLocaleTimeString("ru-RU");
 
 }
 
 updateClock();
 
-setInterval(
-
-    updateClock,
-
-    1000
-
-);
+setInterval(updateClock,1000);
 
 </script>

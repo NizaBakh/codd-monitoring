@@ -1,0 +1,42 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Железная дорога
+{% endblock %}
+
+{% block analytics %}
+
+<div class="sidebar-title">
+    🚆 Железная дорога
+</div>
+
+<div class="sidebar-search">
+
+    <input
+        id="stationSearch"
+        type="text"
+        placeholder="Поиск станции..."
+    >
+
+</div>
+
+<div class="sidebar-counter">
+
+    🚉 Станций:
+    <span id="stationCount">0</span>
+
+</div>
+
+<div class="sidebar-counter">
+
+    🛤 Линий:
+    <span id="lineCount">0</span>
+    <div id="line-list" class="route-list"></div>
+</div>
+
+<div id="station-list" class="route-list">
+
+</div>
+
+{% endblock %}
+

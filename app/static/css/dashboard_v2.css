@@ -1,0 +1,360 @@
+.dashboard-v2{
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+
+    padding:28px;
+
+    background:#1b2430;
+
+    min-height:calc(100vh - 82px);
+
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.dashboard-header-v2{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.dashboard-title h1{
+
+    font-size:36px;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    margin-bottom:6px;
+
+}
+
+.dashboard-title p{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/* =====================================
+   KPI
+===================================== */
+
+.kpi-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+}
+
+.kpi-card{
+
+    background:#253141;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.25s;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-4px);
+
+    background:#2e3d51;
+
+}
+
+.kpi-icon{
+
+    font-size:34px;
+
+}
+
+.kpi-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.kpi-info h2{
+
+    font-size:30px;
+
+    color:white;
+
+}
+
+.kpi-info span{
+
+    color:#9aa8b8;
+
+    font-size:14px;
+
+}
+
+/* =====================================
+   CENTER
+===================================== */
+
+.dashboard-main{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+}
+
+/* =====================================
+   CITY
+===================================== */
+
+.city-view{
+
+    background:#253141;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    overflow:hidden;
+
+}
+
+.block-title{
+
+    padding:20px 24px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:white;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.city-placeholder{
+
+    height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#748396;
+
+    font-size:22px;
+
+}
+
+/* =====================================
+   DISTRICTS
+===================================== */
+
+.district-panel{
+
+    background:#253141;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+}
+
+.district-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    padding:18px;
+
+    overflow:auto;
+
+}
+
+.district-card{
+
+    background:#303f54;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.district-card:hover{
+
+    background:#3c4d66;
+
+    transform:translateY(-2px);
+
+}
+
+.district-card h3{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+.district-card .stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:8px;
+
+}
+
+.district-card .stats div{
+
+    color:#c7d2de;
+
+    font-size:13px;
+
+}
+
+/* =====================================
+   CHARTS
+===================================== */
+
+.charts-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.chart-card{
+
+    height:270px;
+
+    background:#253141;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#7f91a5;
+
+    font-size:22px;
+
+}
+
+/* =====================================
+   LIGHT
+===================================== */
+
+body.light-theme .dashboard-v2{
+
+    background:#eef3f8;
+
+}
+
+body.light-theme .dashboard-title h1{
+
+    color:#222;
+
+}
+
+body.light-theme .dashboard-title p{
+
+    color:#666;
+
+}
+
+body.light-theme .kpi-card,
+body.light-theme .city-view,
+body.light-theme .district-panel,
+body.light-theme .chart-card{
+
+    background:#ffffff;
+
+    border:1px solid #dce2ea;
+
+}
+
+body.light-theme .kpi-info h2{
+
+    color:#222;
+
+}
+
+body.light-theme .block-title{
+
+    color:#222;
+
+}
+
+body.light-theme .district-card{
+
+    background:#f6f8fb;
+
+}
+
+body.light-theme .district-card:hover{
+
+    background:#e9eef6;
+
+}
+
+body.light-theme .district-card h3{
+
+    color:#222;
+
+}

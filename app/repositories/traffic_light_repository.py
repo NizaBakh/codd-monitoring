@@ -5,27 +5,40 @@ from app.models.traffic_light import TrafficLight
 
 class TrafficLightRepository:
 
-
     @staticmethod
     def get_all(db: Session):
 
         return db.query(TrafficLight).all()
 
+    @staticmethod
+    def get_by_id(
+        db: Session,
+        id: int
+    ):
+
+        return (
+            db.query(TrafficLight)
+            .filter(
+                TrafficLight.id == id
+            )
+            .first()
+        )
 
     @staticmethod
-    def get_by_id(db: Session,id:int):
+    def create(
+        db: Session,
+        data
+    ):
 
-        return db.query(TrafficLight).filter(
-            TrafficLight.id==id
-        ).first()
-
-
-    @staticmethod
-    def create(db:Session,data):
-
-        obj=TrafficLight(
+        obj = TrafficLight(
 
             name=data.name,
+
+            district=data.district,
+
+            mahalla=data.mahalla,
+
+            owner=data.owner,
 
             latitude=data.latitude,
 
@@ -43,17 +56,26 @@ class TrafficLightRepository:
 
         return obj
 
-
     @staticmethod
-    def update(db,obj,data):
+    def update(
+        db: Session,
+        obj,
+        data
+    ):
 
-        obj.name=data.name
+        obj.name = data.name
 
-        obj.latitude=data.latitude
+        obj.district = data.district
 
-        obj.longitude=data.longitude
+        obj.mahalla = data.mahalla
 
-        obj.status=data.status
+        obj.owner = data.owner
+
+        obj.latitude = data.latitude
+
+        obj.longitude = data.longitude
+
+        obj.status = data.status
 
         db.commit()
 
@@ -61,9 +83,11 @@ class TrafficLightRepository:
 
         return obj
 
-
     @staticmethod
-    def delete(db,obj):
+    def delete(
+        db: Session,
+        obj
+    ):
 
         db.delete(obj)
 

@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
-
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
 from app.models.road import Road
+
 
 router = APIRouter(
     prefix="/api/roads",
@@ -23,10 +23,26 @@ def get_roads(db: Session = Depends(get_db)):
         result.append({
 
             "id": road.id,
+
             "name": road.name,
+
             "district": road.district,
+
             "geoname_id": road.geoname_id,
-            "geometry": road.geometry
+
+            "geometry": road.geometry,
+
+            "category": getattr(
+                road,
+                "category",
+                None
+            ),
+
+            "length": getattr(
+                road,
+                "length",
+                None
+            )
 
         })
 

@@ -1,0 +1,43 @@
+{% extends "map_page.html" %}
+
+{% block title %}
+Автобусные маршруты
+{% endblock %}
+
+{% block analytics %}
+
+<div class="sidebar-title">
+    🚌 Автобусные маршруты
+</div>
+
+<div class="sidebar-search">
+    <input
+        id="routeSearch"
+        type="text"
+        placeholder="Поиск маршрута..."
+    >
+</div>
+
+<div class="sidebar-counter">
+    Найдено:
+    <span id="routeCount">0</span>
+</div>
+
+<div id="route-list" class="route-list"></div>
+
+<div id="routeInfo" class="route-info">
+
+    <div class="route-info-empty">
+        Выберите маршрут на карте
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block page_scripts %}
+
+<script src="/static/js/bus_routes.js"></script>
+
+{% endblock %}

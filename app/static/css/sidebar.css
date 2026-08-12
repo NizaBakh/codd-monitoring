@@ -1,0 +1,145 @@
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    position:fixed;
+    padding:25px;
+    background:#171b20;
+    border-right:1px solid #2b3138;
+    overflow-y:auto;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+.logo span{
+    color:#4fa3ff;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px;
+    margin-bottom:10px;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:.25s;
+}
+
+.sidebar a:hover{
+    background:#4fa3ff;
+    transform:translateX(5px);
+}
+
+/* ===========================
+   GROUPS
+=========================== */
+
+.menu-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:18px;
+    margin-bottom:8px;
+    padding:10px 15px;
+    font-size:13px;
+    font-weight:700;
+    color:#8ea0b5;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+.submenu-item{
+    margin-left:18px;
+}
+
+.menu-group{
+    margin-bottom:10px;
+}
+
+.menu-group summary{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    color:#ffffff;
+    list-style:none;
+    transition:.25s;
+}
+
+.menu-group summary::-webkit-details-marker{
+    display:none;
+}
+
+.menu-group summary:hover{
+    background:#4fa3ff;
+    transform:translateX(5px);
+}
+
+.menu-group a{
+    margin-left:18px;
+}
+
+.menu-group[open] summary{
+    background:#222831;
+}
+
+.menu-group[open] summary::after{
+    content:"▲";
+    margin-left:auto;
+    font-size:10px;
+    color:#4fa3ff;
+}
+
+.menu-group:not([open]) summary::after{
+    content:"▼";
+    margin-left:auto;
+    font-size:10px;
+    color:#888;
+}
+
+/* ===========================
+   LIGHT
+=========================== */
+
+body.light-theme .sidebar{
+    background:#ffffff;
+    border-right:1px solid #d7dce3;
+}
+
+body.light-theme .logo{
+    color:#20252b;
+}
+
+body.light-theme .sidebar a{
+    color:#20252b;
+}
+
+body.light-theme .menu-title{
+    color:#5b6777;
+}
+
+body.light-theme .menu-group summary{
+    color:#20252b;
+}
+
+body.light-theme .menu-group summary:hover{
+    background:#4fa3ff;
+    color:#fff;
+}
+
+body.light-theme .menu-group[open] summary{
+    background:#eef2f6;
+}
+
+body.light-theme .menu-group summary::after{
+    color:#5b6777;
+}

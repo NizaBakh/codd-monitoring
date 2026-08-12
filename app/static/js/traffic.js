@@ -1,84 +1,79 @@
-/* =====================================================
-   TRAFFIC LIGHTS
-===================================================== */
+let selectedTrafficOwner = "all";
+let selectedTrafficDistrict = null;
 
 async function initTrafficLights() {
-
-    await loadTrafficLights();
-
+    await loadAllTrafficLights();
     showOnlyLayer(trafficLightsLayer);
+    updateTrafficAnalytics();
+    initTrafficOrganizationFilters();
+}
 
-    console.log("traffic:", trafficLights.length);
+async function loadAllTrafficLights() {
 
+    trafficLights = [];
+    trafficLightsLayer.clearLayers();
+
+    await loadMainTrafficLights();
+    await loadTelekomsoftTrafficLights();
+
+    renderTrafficLights();
     updateTrafficAnalytics();
 
 }
 
-/* =====================================================
-   LOAD
-===================================================== */
-
-async function loadTrafficLights() {
+async function loadMainTrafficLights() {
 
     try {
 
-        const response = await fetch("/api/traffic-lights/");
+        const response =
+            await fetch("/api/traffic-lights/geojson");
 
-        if (!response.ok) {
+        if (!response.ok)
+            throw new Error(`Основной GeoJSON: HTTP ${response.status}`);
 
-            throw new Error("Traffic API");
+        const geojson = await response.json();
 
-        }
+        if (
+            !geojson ||
+            geojson.type !== "FeatureCollection"
+        )
+            throw new Error("Основной GeoJSON не является FeatureCollection");
 
-        trafficLights = await response.json();
+        geojson.features.forEach((feature, index) => {
 
-        trafficLightsLayer.clearLayers();
+            if (
+                !feature.geometry ||
+                feature.geometry.type !== "Point"
+            )
+                return;
 
-        const counter = document.getElementById("trafficCount");
+            const coordinates =
+                feature.geometry.coordinates;
 
-        if (counter) {
+            const longitude = Number(coordinates[0]);
+            const latitude = Number(coordinates[1]);
 
-            counter.innerHTML = trafficLights.length;
+            if (
+                !Number.isFinite(latitude) ||
+                !Number.isFinite(longitude)
+            )
+                return;
 
-        }
+            const properties =
+                feature.properties || {};
 
-        trafficLights.forEach(light => {
+            trafficLights.push({
 
-            const marker = L.marker(
+                ...properties,
 
-                [
+                latitude,
+                longitude,
 
-                    light.latitude,
+                source: "main",
 
-                    light.longitude
+                source_index: index
 
-                ],
-
-                {
-
-                    icon: trafficLightIcon
-
-                }
-
-            );
-
-            marker.bindPopup(
-
-                popup(
-
-                    `🚦 ${light.name}`,
-
-                    `
-                    <b>ID:</b> ${light.id}<br>
-                    <b>Статус:</b> ${light.status}<br>
-                    <b>Район:</b> ${light.district}
-                    `
-
-                )
-
-            );
-
-            trafficLightsLayer.addLayer(marker);
+            });
 
         });
 
@@ -86,158 +81,698 @@ async function loadTrafficLights() {
 
     catch (error) {
 
-        console.error(error);
+        console.error(
+            "Ошибка основного GeoJSON:",
+            error
+        );
 
     }
 
 }
 
-/* =====================================================
-   FILTER
-===================================================== */
+async function loadTelekomsoftTrafficLights() {
 
-function filterTrafficLights(district) {
+    try {
 
-    trafficLightsLayer.clearLayers();
+        const response =
+            await fetch(
+                "/api/traffic-lights/telekomsoft-geojson"
+            );
 
-    let count = 0;
+        if (!response.ok)
+            throw new Error(
+                `Telekomsoft GeoJSON: HTTP ${response.status}`
+            );
 
-    trafficLights.forEach(light => {
+        const geojson =
+            await response.json();
 
-        if (!districtMatch(light.district, district))
-            return;
+        if (
+            !geojson ||
+            geojson.type !== "FeatureCollection"
+        )
+            throw new Error(
+                "Telekomsoft GeoJSON не является FeatureCollection"
+            );
 
-        count++;
+        geojson.features.forEach((feature, index) => {
 
-        const marker = L.marker(
+            if (
+                !feature.geometry ||
+                feature.geometry.type !== "Point"
+            )
+                return;
 
-            [
+            const coordinates =
+                feature.geometry.coordinates;
 
-                light.latitude,
+            const longitude =
+                Number(coordinates[0]);
 
-                light.longitude
+            const latitude =
+                Number(coordinates[1]);
 
-            ],
+            if (
+                !Number.isFinite(latitude) ||
+                !Number.isFinite(longitude)
+            )
+                return;
 
-            {
+            const properties =
+                feature.properties || {};
 
-                icon: trafficLightIcon
+            trafficLights.push({
+
+                ...properties,
+
+                latitude,
+                longitude,
+
+                source: "telekomsoft",
+
+                source_index: index
+
+            });
+
+        });
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Ошибка Telekomsoft:",
+            error
+        );
+
+    }
+
+}
+
+function trafficLightOwner(light) {
+
+    if (
+        light.source === "telekomsoft"
+    ) {
+
+        return "Телекомсофт";
+
+    }
+
+    const owner =
+        (
+            light.owner ||
+            light.Owner ||
+            light.OWNER ||
+            light["Прина"] ||
+            ""
+        )
+        .toString()
+        .trim();
+
+    if (!owner)
+        return "Телекомсофт";
+
+    if (owner === "КСУБДД")
+        return "ГАИ";
+
+    if (owner === "СМЭУ")
+        return "СМЭУ";
+
+    return "Безхозные";
+
+}
+
+function trafficLightDistrict(light) {
+
+    return (
+        light.district ||
+        light.District ||
+        light.district_name ||
+        light.Tuman ||
+        light.tuman ||
+        light["Туман"] ||
+        ""
+    )
+    .toString()
+    .trim();
+
+}
+
+function detectTrafficDistrict(
+    latitude,
+    longitude
+) {
+
+    if (
+        !window.districts ||
+        !districts.length
+    )
+        return null;
+
+    const point =
+        turf.point([
+            longitude,
+            latitude
+        ]);
+
+    for (const district of districts) {
+
+        const geometry =
+            safeJSON(
+                district.geometry
+            );
+
+        if (!geometry)
+            continue;
+
+        try {
+
+            if (
+                turf.booleanPointInPolygon(
+                    point,
+                    geometry
+                )
+            ) {
+
+                return district;
 
             }
 
+        }
+
+        catch (error) {
+
+            console.warn(
+                "Ошибка геометрии района:",
+                error
+            );
+
+        }
+
+    }
+
+    return null;
+
+}
+
+function trafficDistrictMatch(
+    light,
+    district
+) {
+
+    if (!district)
+        return true;
+
+    if (
+        light.source === "telekomsoft"
+    ) {
+
+        const detected =
+            detectTrafficDistrict(
+                light.latitude,
+                light.longitude
+            );
+
+        if (!detected)
+            return false;
+
+        return (
+            detected.name === district.name ||
+            detected.name_ru === district.name_ru ||
+            detected.name === district.name_ru ||
+            detected.name_ru === district.name
         );
+
+    }
+
+    const objectDistrict =
+        normalize(
+            trafficLightDistrict(light)
+        );
+
+    const districtName =
+        normalize(
+            district.name
+        );
+
+    const districtRu =
+        normalize(
+            district.name_ru
+        );
+
+    return (
+        objectDistrict === districtName ||
+        objectDistrict === districtRu ||
+        objectDistrict.includes(districtName) ||
+        objectDistrict.includes(districtRu) ||
+        districtName.includes(objectDistrict) ||
+        districtRu.includes(objectDistrict)
+    );
+
+}
+
+function renderTrafficLights() {
+
+    trafficLightsLayer.clearLayers();
+
+    const selected =
+        trafficLights.filter(light => {
+
+            if (
+                selectedTrafficOwner !== "all"
+            ) {
+
+                if (
+                    trafficLightOwner(light) !==
+                    selectedTrafficOwner
+                )
+                    return false;
+
+            }
+
+            if (
+                selectedTrafficDistrict
+            ) {
+
+                if (
+                    !trafficDistrictMatch(
+                        light,
+                        selectedTrafficDistrict
+                    )
+                )
+                    return false;
+
+            }
+
+            return true;
+
+        });
+
+    selected.forEach((light, index) => {
+
+        const marker =
+            L.marker(
+                [
+                    light.latitude,
+                    light.longitude
+                ],
+                {
+                    icon:
+                        trafficLightIcon
+                }
+            );
+
+        const name =
+            light.name ||
+            light.Name ||
+            light.NAME ||
+            light.object_name ||
+            light.objectName ||
+            light["Адрес"] ||
+            `Светофор № ${index + 1}`;
+
+        const id =
+            light.id ||
+            light.ID ||
+            light.Id ||
+            light.osm_id ||
+            light.source_index ||
+            "—";
+
+        let district = "—";
+
+        if (
+            light.source === "telekomsoft"
+        ) {
+
+            const detected =
+                detectTrafficDistrict(
+                    light.latitude,
+                    light.longitude
+                );
+
+            if (detected) {
+
+                district =
+                    detected.name_ru ||
+                    detected.name ||
+                    "—";
+
+            }
+
+        }
+
+        else {
+
+            district =
+                trafficLightDistrict(light) ||
+                "—";
+
+        }
+
+        const owner =
+            trafficLightOwner(light);
+
+        const status =
+            light.status ||
+            light.Status ||
+            "ACTIVE";
 
         marker.bindPopup(
 
             popup(
 
-                `🚦 ${light.name}`,
+                `🚦 ${name}`,
 
                 `
-                <b>ID:</b> ${light.id}<br>
-                <b>Статус:</b> ${light.status}<br>
-                <b>Район:</b> ${light.district}
+                <b>ID:</b> ${id}
+                <br>
+                <b>Организация:</b> ${owner}
+                <br>
+                <b>Статус:</b> ${status}
+                <br>
+                <b>Район:</b> ${district}
                 `
 
             )
 
         );
 
-        trafficLightsLayer.addLayer(marker);
+        trafficLightsLayer.addLayer(
+            marker
+        );
 
     });
 
-    const counter = document.getElementById("trafficCount");
+    updateTrafficCounter(
+        selected.length
+    );
 
-    if (counter) {
+}
 
-        counter.innerHTML = count;
+function initTrafficOrganizationFilters() {
+
+    const checkboxes =
+        document.querySelectorAll(
+            ".organization-checkbox"
+        );
+
+    checkboxes.forEach(checkbox => {
+
+        checkbox.addEventListener(
+            "change",
+            updateTrafficOrganizationLayers
+        );
+
+    });
+
+    updateTrafficOrganizationLayers();
+
+}
+
+function updateTrafficOrganizationLayers() {
+
+    const checkboxes =
+        document.querySelectorAll(
+            ".organization-checkbox"
+        );
+
+    const selectedOwners =
+        Array.from(checkboxes)
+            .filter(
+                checkbox =>
+                    checkbox.checked
+            )
+            .map(
+                checkbox =>
+                    checkbox.value
+            );
+
+    trafficLightsLayer.clearLayers();
+
+    const selected =
+        trafficLights.filter(light => {
+
+            const owner =
+                trafficLightOwner(light);
+
+            if (
+                !selectedOwners.includes(owner)
+            )
+                return false;
+
+            if (
+                selectedTrafficDistrict &&
+                !trafficDistrictMatch(
+                    light,
+                    selectedTrafficDistrict
+                )
+            )
+                return false;
+
+            return true;
+
+        });
+
+    selected.forEach((light, index) => {
+
+        const marker =
+            L.marker(
+                [
+                    light.latitude,
+                    light.longitude
+                ],
+                {
+                    icon:
+                        trafficLightIcon
+                }
+            );
+
+        const name =
+            light.name ||
+            light.Name ||
+            light.NAME ||
+            light.object_name ||
+            light.objectName ||
+            light["Адрес"] ||
+            `Светофор № ${index + 1}`;
+
+        const id =
+            light.id ||
+            light.ID ||
+            light.Id ||
+            light.osm_id ||
+            light.source_index ||
+            "—";
+
+        let district = "—";
+
+        if (
+            light.source === "telekomsoft"
+        ) {
+
+            const detected =
+                detectTrafficDistrict(
+                    light.latitude,
+                    light.longitude
+                );
+
+            if (detected) {
+
+                district =
+                    detected.name_ru ||
+                    detected.name ||
+                    "—";
+
+            }
+
+        }
+
+        else {
+
+            district =
+                trafficLightDistrict(light) ||
+                "—";
+
+        }
+
+        marker.bindPopup(
+
+            popup(
+
+                `🚦 ${name}`,
+
+                `
+                <b>ID:</b> ${id}
+                <br>
+                <b>Организация:</b>
+                ${trafficLightOwner(light)}
+                <br>
+                <b>Район:</b>
+                ${district}
+                `
+
+            )
+
+        );
+
+        trafficLightsLayer.addLayer(
+            marker
+        );
+
+    });
+
+    updateTrafficAnalytics(
+        selectedTrafficDistrict
+    );
+
+}
+
+function updateTrafficCounter(count) {
+
+    const trafficCount =
+        document.getElementById(
+            "trafficCount"
+        );
+
+    if (trafficCount)
+        trafficCount.textContent =
+            count;
+
+    const districtTrafficCount =
+        document.getElementById(
+            "districtTrafficCount"
+        );
+
+    if (districtTrafficCount)
+        districtTrafficCount.textContent =
+            count;
+
+}
+
+function filterTrafficLights(district) {
+
+    selectedTrafficDistrict =
+        district || null;
+
+    updateTrafficOrganizationLayers();
+
+}
+
+function resetTrafficLightFilters() {
+
+    selectedTrafficDistrict =
+        null;
+
+    document
+        .querySelectorAll(
+            ".organization-checkbox"
+        )
+        .forEach(
+            checkbox =>
+                checkbox.checked = true
+        );
+
+    updateTrafficOrganizationLayers();
+
+}
+
+function updateTrafficAnalytics(
+    district = selectedTrafficDistrict
+) {
+
+    let selected =
+        trafficLights.filter(light => {
+
+            if (
+                district &&
+                !trafficDistrictMatch(
+                    light,
+                    district
+                )
+            )
+                return false;
+
+            return true;
+
+        });
+
+    const checkboxes =
+        document.querySelectorAll(
+            ".organization-checkbox"
+        );
+
+    const selectedOwners =
+        Array.from(checkboxes)
+            .filter(
+                checkbox =>
+                    checkbox.checked
+            )
+            .map(
+                checkbox =>
+                    checkbox.value
+            );
+
+    selected =
+        selected.filter(
+            light =>
+                selectedOwners.includes(
+                    trafficLightOwner(light)
+                )
+        );
+
+    const districtName =
+        document.getElementById(
+            "selectedDistrict"
+        );
+
+    if (districtName) {
+
+        districtName.textContent =
+            district
+                ? (
+                    district.name_ru ||
+                    district.name ||
+                    "Район"
+                )
+                : "Весь город";
+
+    }
+
+    const trafficCount =
+        document.getElementById(
+            "districtTrafficCount"
+        );
+
+    if (trafficCount) {
+
+        trafficCount.textContent =
+            selected.length;
+
+    }
+
+    const types =
+        document.getElementById(
+            "trafficTypes"
+        );
+
+    if (types) {
+
+        types.textContent =
+            "Нет данных";
 
     }
 
 }
 
-/* =====================================================
-   ANALYTICS
-===================================================== */
+function filterTrafficLightsByOwner(owner) {
 
-function updateTrafficAnalytics(district = null) {
+    selectedTrafficOwner =
+        owner || "all";
 
-    let selected;
+    renderTrafficLights();
 
-    if (!district || (!district.name && !district.name_ru)) {
-
-        selected = trafficLights;
-
-    } else {
-
-        selected = trafficLights.filter(light =>
-            districtMatch(light.district, district)
-        );
-
-    }
-
-    const districtName = document.getElementById("selectedDistrict");
-
-    if (districtName) {
-
-        districtName.innerHTML =
-            (!district || (!district.name && !district.name_ru))
-                ? "Весь город"
-                : (district.name_ru || district.name);
-
-    }
-
-    const trafficCount = document.getElementById("districtTrafficCount");
-
-    if (trafficCount) {
-
-        trafficCount.innerHTML = selected.length;
-
-    }
-
-    let active = 0;
-    let offline = 0;
-    let maintenance = 0;
-
-    selected.forEach(light => {
-
-        switch ((light.status || "").toUpperCase()) {
-
-            case "ACTIVE":
-                active++;
-                break;
-
-            case "OFFLINE":
-                offline++;
-                break;
-
-            case "MAINTENANCE":
-                maintenance++;
-                break;
-
-        }
-
-    });
-
-    const status = document.getElementById("trafficStatus");
-
-    if (status) {
-
-        status.innerHTML = `
-            🟢 ACTIVE: ${active}<br>
-            🟡 MAINTENANCE: ${maintenance}<br>
-            🔴 OFFLINE: ${offline}
-        `;
-
-    }
-
-    const types = document.getElementById("trafficTypes");
-
-    if (types) {
-
-        types.innerHTML = "Нет данных";
-
-    }
+    updateTrafficAnalytics();
 
 }
